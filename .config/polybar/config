@@ -120,20 +120,23 @@ label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
-label-focused = %name%
+label-focused = " "
+;label-focused = %name%
 ;label-focused-background = ${colors.background-alt}
 label-focused-foreground= #fff
 ;label-focused-underline= #752a2a
 label-focused-padding = 1
 
-label-occupied = %name%
+;label-occupied = %name%
+label-occupied = " "
 label-occupied-padding = 1
 
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
 
-label-empty = %name%
+;label-empty = %name%
+label-empty = " "
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 1
 
