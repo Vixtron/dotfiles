@@ -10,13 +10,14 @@ workspace-label = %name%
 label-monitor = %name%
 label-mode-padding = 5
 format = <label-state>
-label-focused = 
-label-focused-foreground = #ffffff
+label-focused = 
+label-focused-foreground = #cccccc
 label-focused-background = #3f3f3f
-label-focused-underline = #752a2a
+;label-focused-underline = #752a2a
 label-focused-padding = 5
 label-occupied = 
 label-occupied-padding = 5
+label-occupied-foreground = #a6a6a6
 label-urgent = 
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
@@ -31,6 +32,7 @@ type = internal/cpu
 interval = 0.5
 format = <label>
 label = CPU %percentage%% 
+label-foreground = #bfbfbf
 
 [module/date]
 type = internal/date
@@ -40,6 +42,7 @@ date-alt = %A, %d %B %Y
 time-alt = %l:%M:%S
 label = "%date%"
 label-background = #3f3f3f
+label-foreground = #bfbfbf
 label-padding = 3
 
 [module/volume]
@@ -50,7 +53,8 @@ format-volume-background = #3f3f3f
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-format-volume-padding = 3
+format-volume-padding = 4
+format-volume-foreground = #bfbfbf
 mapping = true
 
 [module/volramp]
@@ -58,15 +62,22 @@ type = internal/volume
 
 format-volume = <bar-volume>
 format-volume-padding = 1
-bar-volume-width = 10
+bar-volume-width = 13
+bar-volume-height = 13
 bar-volume-foreground-0 = #752a2a
 bar-volume-foreground-1 = #752a2a
 bar-volume-gradient = false
-bar-volume-indicator = 
+bar-volume-indicator = 
+bar-volume-indicator-foreground = #404040
+format-muted-prefix = " "
+format-muted-foreground = #752a2a
+label-muted = Muted
+
 bar-volume-indicator-font = 3
 bar-volume-fill = ─
 bar-volume-fill-font = 3
 bar-volume-empty = ─
+bar-volume-empty-foreground = #404040
 bar-volume-empty-font = 3
 
 [bar/watch]
