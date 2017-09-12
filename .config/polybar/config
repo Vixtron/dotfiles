@@ -8,24 +8,24 @@ reverse-scroll = false
 fuzzy-match = true
 workspace-label = %name%
 label-monitor = %name%
-label-mode-padding = 5
+label-mode-padding = 4
 format = <label-state>
-label-focused = 
-label-focused-foreground = #cccccc
-label-focused-background = #3f3f3f
+label-focused = 
+label-focused-foreground = #ccc
+label-focused-background = #282828
 ;label-focused-underline = #752a2a
-label-focused-padding = 5
-label-occupied = 
-label-occupied-padding = 5
-label-occupied-foreground = #a6a6a6
-label-urgent = 
+label-focused-padding = 4
+label-occupied = 
+label-occupied-padding = 4
+label-occupied-foreground = #404040
+label-urgent = 
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
-label-urgent-underline = #9b0a20
-label-urgent-padding = 5
-label-empty = 
-label-empty-foreground = #55
-label-empty-padding = 5
+;label-urgent-underline = #9b0a20
+label-urgent-padding = 4
+label-empty = 
+label-empty-foreground = #404040
+label-empty-padding = 4
 
 [module/cpu]
 type = internal/cpu
@@ -37,11 +37,11 @@ label-foreground = #bfbfbf
 [module/date]
 type = internal/date
 interval = 1.0
-date = %Y-%m-%d %l:%M %p
+date = %l:%M %p
 date-alt = %A, %d %B %Y
 time-alt = %l:%M:%S
 label = "%date%"
-label-background = #3f3f3f
+label-background = #282828
 label-foreground = #bfbfbf
 label-padding = 3
 
@@ -49,7 +49,7 @@ label-padding = 3
 type = internal/volume
 
 format-volume = <ramp-volume> 
-format-volume-background = #3f3f3f
+format-volume-background = #282828
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
@@ -67,7 +67,7 @@ bar-volume-height = 13
 bar-volume-foreground-0 = #752a2a
 bar-volume-foreground-1 = #752a2a
 bar-volume-gradient = false
-bar-volume-indicator = 
+bar-volume-indicator = 
 bar-volume-indicator-foreground = #404040
 format-muted-prefix = " "
 format-muted-foreground = #752a2a
@@ -85,7 +85,7 @@ monitor = DP-0
 monitor-strict = false
 bottom = false
 width = 100%
-height = 22
+height = 28
 fixed-center = true
 offset-x = 0
 offset-y = 0
@@ -106,10 +106,10 @@ font-2 = DroidSansGeorgian-Bold:size=10;2
 font-3 = NotoSansMongolian-Bold:size=10;2
 font-4 = DroidSansHebrew-Bold:size=10;2
 font-5 = siji-Bold:size=10;2
-font-6 = fontawesome:size=10;2
-modules-left = volume volramp
-modules-center = bspwm
-modules-right = cpu date
+font-6 = fontawesome:size=11;3
+modules-left = bspwm
+modules-center = date
+modules-right = cpu volramp volume
 border-bottom-size = 2
 border-bottom-color = #752a2a
 
