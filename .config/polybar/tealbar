@@ -106,6 +106,7 @@ label-padding = 2
 format-prefix-padding = 0
 format-prefix-foreground = #bfbfbf
 
+; Not used in this bar.
 [module/volramp]
 type = internal/volume
 
