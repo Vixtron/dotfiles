@@ -1,9 +1,9 @@
-;  ▄█▄    █▄▄▄▄ ▄█ █▀▄▀█ 
-;  █▀ ▀▄  █  ▄▀ ██ █ █ █ 
-;  █   ▀  █▀▀▌  ██ █ ▄ █ 
-;  █▄  ▄▀ █  █  ▐█ █   █ 
-;  ▀███▀    █    ▐    █  
-;          ▀         ▀
+;  _________        .__         
+;  \_   ___ \_______|__| _____  
+;  /    \  \/\_  __ \  |/     \ 
+;  \     \____|  | \/  |  Y Y  \
+;   \______  /|__|  |__|__|_|  /
+;          \/                \/
 
 [module/bspwm]
 type = internal/bspwm
@@ -15,26 +15,26 @@ reverse-scroll = false
 fuzzy-match = true
 workspace-label = %index%
 label-monitor = %name%
-label-mode-padding = 5
 format = <label-state>
 format-background = #282828
 format-prefix = "      "
-format-prefix-margin-right = 3
-format-prefix-foreground = #bfbfbf
+format-prefix-margin-right = 10
+format-prefix-foreground = #949494
 format-prefix-background = #282828
-format-prefix-padding = 0
+format-prefix-padding = 3
 
 label-focused = %name%
 label-focused-foreground = #cccccc
-label-focused-padding = 3
+label-focused-background = #282828
+label-focused-padding = 5
 
 label-empty = %name%
 label-empty-foreground = #333333
-label-empty-padding = 3
+label-empty-padding = 5
 
 label-occupied = %name%
-label-occupied-foreground = #8c8c8c
-label-occupied-padding = 3
+label-occupied-foreground = #949494
+label-occupied-padding = 5
 
 [module/cpu]
 type = internal/cpu
@@ -51,7 +51,7 @@ date-alt = %A, %d %B %Y
 time-alt = %l:%M:%S
 label = "%date%"
 label-background = #282828
-label-foreground = #bfbfbf
+label-foreground = #949494
 label-padding = 3
 
 [module/volume]
@@ -62,8 +62,8 @@ format-volume-background = #282828
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-format-volume-padding = 4
-format-volume-foreground = #bfbfbf
+format-volume-padding = 7
+format-volume-foreground = #949494
 mapping = true
 
 [module/volramp]
@@ -76,7 +76,7 @@ bar-volume-height = 13
 bar-volume-foreground-0 = #752a2a
 bar-volume-foreground-1 = #752a2a
 bar-volume-gradient = false
-bar-volume-indicator = 
+bar-volume-indicator = 
 bar-volume-indicator-foreground = #404040
 format-muted-prefix = " "
 format-muted-foreground = #752a2a
@@ -98,7 +98,7 @@ height = 28
 fixed-center = true
 offset-x = 0
 offset-y = 0
-background = #1b1b1b
+background = #1a1a1a
 foreground = #ccc
 radius = 0.0
 line-size = 1
