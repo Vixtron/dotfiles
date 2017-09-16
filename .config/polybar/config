@@ -84,10 +84,10 @@ label-muted = Muted
 
 bar-volume-indicator-font = 3
 bar-volume-fill = ─
-bar-volume-fill-font = 3
+bar-volume-fill-font = 5
 bar-volume-empty = ─
 bar-volume-empty-foreground = #404040
-bar-volume-empty-font = 3
+bar-volume-empty-font = 5
 
 [bar/watch]
 monitor = DP-0
@@ -110,7 +110,12 @@ module-margin = 1
 override-redirect = false
 wm-restack = bspwm
 font-0 = NotoSans-Regular:size=10;2
-font-1 = fontawesome:size=11;3
+font-1 = Junicode-Bold:size=10;2
+font-2 = DroidSansGeorgian-Bold:size=10;2
+font-3 = NotoSansMongolian-Bold:size=10;2
+font-4 = DroidSansHebrew-Bold:size=10;2
+font-5 = siji-Bold:size=10;2
+font-6 = fontawesome:size=11;3
 modules-left = bspwm
 modules-center = date
 modules-right = volramp volume
