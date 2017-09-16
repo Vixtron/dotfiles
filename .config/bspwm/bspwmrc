@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sxhkd &
 nitrogen --restore &
 compton --config ~/.config/compton/config -b
