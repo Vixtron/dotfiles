@@ -1,31 +1,40 @@
+;  ▄█▄    █▄▄▄▄ ▄█ █▀▄▀█ 
+;  █▀ ▀▄  █  ▄▀ ██ █ █ █ 
+;  █   ▀  █▀▀▌  ██ █ ▄ █ 
+;  █▄  ▄▀ █  █  ▐█ █   █ 
+;  ▀███▀    █    ▐    █  
+;          ▀         ▀
+
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces = true
+pin-workspaces = false
 inline-mode = false
 enable-click = true
 enable-scroll = true
 reverse-scroll = false
 fuzzy-match = true
-workspace-label = %name%
+workspace-label = %index%
 label-monitor = %name%
-label-mode-padding = 4
+label-mode-padding = 5
 format = <label-state>
-label-focused = 
-label-focused-foreground = #ccc
-label-focused-background = #282828
-;label-focused-underline = #752a2a
-label-focused-padding = 4
-label-occupied = 
-label-occupied-padding = 4
-label-occupied-foreground = #404040
-label-urgent = 
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-;label-urgent-underline = #9b0a20
-label-urgent-padding = 4
-label-empty = 
-label-empty-foreground = #404040
-label-empty-padding = 4
+format-background = #282828
+format-prefix = "      "
+format-prefix-margin-right = 3
+format-prefix-foreground = #bfbfbf
+format-prefix-background = #282828
+format-prefix-padding = 0
+
+label-focused = %name%
+label-focused-foreground = #cccccc
+label-focused-padding = 3
+
+label-empty = %name%
+label-empty-foreground = #333333
+label-empty-padding = 3
+
+label-occupied = %name%
+label-occupied-foreground = #8c8c8c
+label-occupied-padding = 3
 
 [module/cpu]
 type = internal/cpu
@@ -101,15 +110,10 @@ module-margin = 1
 override-redirect = false
 wm-restack = bspwm
 font-0 = NotoSans-Regular:size=10;2
-font-1 = Junicode-Bold:size=10;2
-font-2 = DroidSansGeorgian-Bold:size=10;2
-font-3 = NotoSansMongolian-Bold:size=10;2
-font-4 = DroidSansHebrew-Bold:size=10;2
-font-5 = siji-Bold:size=10;2
-font-6 = fontawesome:size=11;3
+font-1 = fontawesome:size=11;3
 modules-left = bspwm
 modules-center = date
-modules-right = cpu volramp volume
+modules-right = volramp volume
 border-bottom-size = 2
 border-bottom-color = #752a2a
 
