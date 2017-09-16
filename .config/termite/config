@@ -1,123 +1,102 @@
-;  ▄█▄    █▄▄▄▄ ▄█ █▀▄▀█ 
-;  █▀ ▀▄  █  ▄▀ ██ █ █ █ 
-;  █   ▀  █▀▀▌  ██ █ ▄ █ 
-;  █▄  ▄▀ █  █  ▐█ █   █ 
-;  ▀███▀    █    ▐    █  
-;          ▀         ▀
+[options]
+font = Noto Mono 10
+padding = 8
+border_width = 8
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+#font = Noto Mono 9
+scrollback_lines = 10000
+search_wrap = true
+#icon_name = terminal
+#geometry = 640x480
 
-[module/bspwm]
-type = internal/bspwm
-pin-workspaces = false
-inline-mode = false
-enable-click = true
-enable-scroll = true
-reverse-scroll = false
-fuzzy-match = true
-workspace-label = %index%
-label-monitor = %name%
-label-mode-padding = 5
-format = <label-state>
-format-background = #282828
-format-prefix = "      "
-format-prefix-margin-right = 3
-format-prefix-foreground = #bfbfbf
-format-prefix-background = #282828
-format-prefix-padding = 0
+# "system", "on" or "off"
+cursor_blink = system
 
-label-focused = %name%
-label-focused-foreground = #cccccc
-label-focused-padding = 3
+# "block", "underline" or "ibeam"
+cursor_shape = underline
 
-label-empty = %name%
-label-empty-foreground = #333333
-label-empty-padding = 3
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
 
-label-occupied = %name%
-label-occupied-foreground = #8c8c8c
-label-occupied-padding = 3
+# set size hints for the window
+#size_hints = false
 
-[module/cpu]
-type = internal/cpu
-interval = 0.5
-format = <label>
-label = CPU %percentage%% 
-label-foreground = #bfbfbf
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
 
-[module/date]
-type = internal/date
-interval = 1.0
-date = %l:%M %p
-date-alt = %A, %d %B %Y
-time-alt = %l:%M:%S
-label = "%date%"
-label-background = #282828
-label-foreground = #bfbfbf
-label-padding = 3
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
 
-[module/volume]
-type = internal/volume
+[colors]
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+foreground = #dcdccc
+foreground_bold = #ffffff
+background = #1F1F1F
 
-format-volume = <ramp-volume> 
-format-volume-background = #282828
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-format-volume-padding = 4
-format-volume-foreground = #bfbfbf
-mapping = true
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
 
-[module/volramp]
-type = internal/volume
+# if unset, will reverse foreground and background
+highlight = #2f2f2f
 
-format-volume = <bar-volume>
-format-volume-padding = 1
-bar-volume-width = 13
-bar-volume-height = 13
-bar-volume-foreground-0 = #752a2a
-bar-volume-foreground-1 = #752a2a
-bar-volume-gradient = false
-bar-volume-indicator = 
-bar-volume-indicator-foreground = #404040
-format-muted-prefix = " "
-format-muted-foreground = #752a2a
-label-muted = Muted
+# colors from color0 to color254 can be set
 
-bar-volume-indicator-font = 3
-bar-volume-fill = ─
-bar-volume-fill-font = 3
-bar-volume-empty = ─
-bar-volume-empty-foreground = #404040
-bar-volume-empty-font = 3
+# special
+foreground      = #a6a6a6
+foreground_bold = #a6a6a6
+cursor          = #a6a6a6
+background      = #1b1b1b
 
-[bar/watch]
-monitor = DP-0
-monitor-strict = false
-bottom = false
-width = 100%
-height = 28
-fixed-center = true
-offset-x = 0
-offset-y = 0
-background = #1b1b1b
-foreground = #ccc
-radius = 0.0
-line-size = 1
-line-color = #752a2a
-border-size = 0
-border-color = #752a2a
-padding = 0
-module-margin = 1
-override-redirect = false
-wm-restack = bspwm
-font-0 = NotoSans-Regular:size=10;2
-font-1 = fontawesome:size=11;3
-modules-left = bspwm
-modules-center = date
-modules-right = volramp volume
-border-bottom-size = 2
-border-bottom-color = #752a2a
+# black
+color0  = #303030
+color8  = #5e5e5e
 
-[settings]
-throttle-output = 5
-throttle-output-for = 10
-throttle-input-for = 30
+# red
+color1  = #752a2a
+color9  = #752a2a
+
+# green
+color2  = #752a2a
+color10 = #8b4343
+
+# yellow
+color3  = #595958
+color11 = #595958
+
+# blue
+color4  = #752a2a
+color12 = #d8a558
+
+# magenta
+color5  = #9a413d
+color13 = #752a2a
+
+# cyan
+color6  = #9a413d
+color14 = #9a413d
+
+# white
+color7  = #c6c6c6
+color15 = #ffffff
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 8
+#border = #3f3f3f
+#border_width = 8
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
