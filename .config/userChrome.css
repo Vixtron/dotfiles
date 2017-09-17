@@ -1,0 +1,28 @@
+:root {
+    --tab-toolbar-navbar-overlap: 0px !important;
+    --tab-line-color: highlight !important;
+    --tab-min-height: 33px !important;
+    --tab-loading-fill: #0A84FF !important;
+    --tabs-border: rgba(0,0,0,.3) !important;
+    --toolbar-non-lwt-bgcolor: #1a1a1a !important;
+    --toolbar-non-lwt-bgimage: none !important;
+    --tab-toolbar-navbar-overlap: 1px !important;
+}
+
+#urlbar {
+    background-color: #282828 !important;
+    border-radius: 0px !important;
+}
+
+.tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
+    color: #959595 !important;
+    background-color: #1e1e1e !important;
+}
+
+.tabbrowser-tab {
+    background-color: #1e1e1e !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) {
+    -moz-appearance: #282828 !important;
+}
