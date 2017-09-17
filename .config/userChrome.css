@@ -4,7 +4,7 @@
     --tab-min-height: 33px !important;
     --tab-loading-fill: #0A84FF !important;
     --tabs-border: rgba(0,0,0,.3) !important;
-    --toolbar-non-lwt-bgcolor: #1a1a1a !important;
+    --toolbar-non-lwt-bgcolor: #141414 !important;
     --toolbar-non-lwt-bgimage: none !important;
     --tab-toolbar-navbar-overlap: 1px !important;
 }
@@ -20,13 +20,13 @@
 }
 
 #TabsToolbar .tab-background[selected] {
-    background-color: #1a1a1a !important;
+    background-color: #141414 !important;
 }
 
 #TabsToolbar .tab-background {
-    background-color: #1e1e1e !important;
+    background-color: #141414 !important;
 }
 
 toolbarbutton:hover {
-    color: #1e1e1e !important;
+    color: #333333 !important;
 }
