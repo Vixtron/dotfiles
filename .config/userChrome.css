@@ -19,10 +19,14 @@
     background-color: #1e1e1e !important;
 }
 
-.tabbrowser-tab {
+#TabsToolbar .tab-background[selected] {
+    background-color: #1a1a1a !important;
+}
+
+#TabsToolbar .tab-background {
     background-color: #1e1e1e !important;
 }
 
-#TabsToolbar:not(:-moz-lwtheme) {
-    -moz-appearance: #282828 !important;
+toolbarbutton:hover {
+    color: #1e1e1e !important;
 }
