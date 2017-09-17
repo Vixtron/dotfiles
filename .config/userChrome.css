@@ -4,7 +4,7 @@
     --tab-min-height: 33px !important;
     --tab-loading-fill: #0A84FF !important;
     --tabs-border: rgba(0,0,0,.3) !important;
-    --toolbar-non-lwt-bgcolor: #141414 !important;
+    --toolbar-non-lwt-bgcolor: #1b1b1b !important;
     --toolbar-non-lwt-bgimage: none !important;
     --tab-toolbar-navbar-overlap: 1px !important;
 }
@@ -16,17 +16,17 @@
 
 .tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
     color: #959595 !important;
-    background-color: #1e1e1e !important;
+    background-color: #1b1b1b !important;
 }
 
 #TabsToolbar .tab-background[selected] {
-    background-color: #141414 !important;
+    background-color: #1b1b1b !important;
 }
 
 #TabsToolbar .tab-background {
-    background-color: #141414 !important;
+    background-color: #1b1b1b !important;
 }
 
 toolbarbutton:hover {
-    color: #333333 !important;
+    color: #cccccc !important;
 }
