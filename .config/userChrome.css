@@ -1,10 +1,6 @@
 :root {
-    --tab-toolbar-navbar-overlap: 0px !important;
-    --tab-line-color: highlight !important;
-    --tab-min-height: 33px !important;
-    --tab-loading-fill: #0A84FF !important;
-    --tabs-border: rgba(0,0,0,.3) !important;
     --toolbar-non-lwt-bgcolor: #1b1b1b !important;
+    --backbutton-background: #444444 !important;
     --toolbar-non-lwt-bgimage: none !important;
     --tab-toolbar-navbar-overlap: 1px !important;
 }
@@ -15,8 +11,8 @@
 }
 
 .tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
-    color: #959595 !important;
-    background-color: #1b1b1b !important;
+    color: #949494 !important;
+    background-color: #282828 !important;
 }
 
 #TabsToolbar .tab-background[selected] {
@@ -24,9 +20,27 @@
 }
 
 #TabsToolbar .tab-background {
-    background-color: #1b1b1b !important;
+    background-color: #282828 !important;
 }
 
 toolbarbutton:hover {
-    color: #cccccc !important;
+    color: #949494 !important;
+}
+
+.toolbarbutton-animatable-box, .toolbarbutton-1 {
+    fill: #cccccc !important;
+}
+
+/* Fix for shitty border radiuses */
+
+.close-icon > .button-icon, .close-icon > .button-box > .button-icon, .close-icon > .toolbarbutton-icon {
+    border-radius: 0px !important;
+}
+
+.findbar-button > .toolbarbutton-text, toolbarbutton.bookmark-item:not(.subviewbutton), toolbar .toolbarbutton-1 > .toolbarbutton-icon, toolbar .toolbarbutton-1 > .toolbarbutton-text, toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+    border-radius: 0px !important;
+}
+
+#main-window, browser[type="content-primary"], browser[type="content"], tabbrowser#content, #content, browser[type="content"] > html {
+  background: #1b1b1b !important;
 }
