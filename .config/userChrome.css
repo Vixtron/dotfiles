@@ -32,7 +32,7 @@ toolbarbutton:hover {
 }
 
 .tabbrowser-tab::after, .tabbrowser-tab::before {
-    border-left: none;
+    border-left: none !important;
 }
 
 /* Fix for shitty border radiuses */
