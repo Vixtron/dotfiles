@@ -31,6 +31,10 @@ toolbarbutton:hover {
     fill: #cccccc !important;
 }
 
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+    border-left: none;
+}
+
 /* Fix for shitty border radiuses */
 
 .close-icon > .button-icon, .close-icon > .button-box > .button-icon, .close-icon > .toolbarbutton-icon {
