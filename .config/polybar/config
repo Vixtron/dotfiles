@@ -16,25 +16,25 @@ fuzzy-match = true
 workspace-label = %index%
 label-monitor = %name%
 format = <label-state>
-format-background = #282828
-format-prefix = 
-;format-prefix-margin-right = 10
+format-background = #1b1b1b
+format-prefix = 
+format-prefix-margin-right = 10
 format-prefix-foreground = #949494
 format-prefix-background = #282828
-format-prefix-padding = 6
+format-prefix-padding = 5
 
 label-focused = %name%
 label-focused-foreground = #949494
 label-focused-background = #282828
-label-focused-padding = 6
+label-focused-padding = 5
 
 label-empty = %name%
 label-empty-foreground = #333333
-label-empty-padding = 6
+label-empty-padding = 5
 
 label-occupied = %name%
-label-occupied-foreground = #333333
-label-occupied-padding = 6
+label-occupied-foreground = #4d4d4d
+label-occupied-padding = 5
 
 [module/cpu]
 type = internal/cpu
@@ -142,7 +142,7 @@ font-3 = NotoSansMongolian-Bold:size=12;3
 font-4 = DroidSansHebrew-Bold:size=12;3
 font-5 = siji-Bold:size=10;2
 font-6 = fontawesome:size=13;3
-modules-left = bspwm xwindow
+modules-left = bspwm
 modules-center = date
 modules-right = volramp volume
 border-bottom-size = 2
