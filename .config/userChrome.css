@@ -37,11 +37,52 @@ toolbarbutton:hover {
 }
 
 .icon.icon-settings {
-    display: none;
+    display: none !important;
 }
 
 .outer-wrapper {
-    background: #1b1b1b;
+    background: #1b1b1b !important;
+}
+
+#onboarding-overlay-button {
+    align-self: center !important;
+}
+
+#onboarding-overlay-button > img {
+    background-repeat: no-repeat !important;
+    width: 400px !important;
+    margin-top: 50px !important;
+    margin-left: 750px !important;
+}
+
+.search-wrapper {
+    margin: 300px 0 40px !important;
+    height: 36px !important;
+}
+
+.search-wrapper input {
+    box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
+    border: 1px solid #262626 !important;
+    box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
+    color: #949494 !important;
+}
+
+.search-wrapper input:hover {
+    border-color: #752a2a !important;
+    box-shadow: none !important;
+}
+
+.search-wrapper input:focus {
+    box-shadow: 0 0px 4px 0 #752a2a !important;
+}
+
+
+.search-wrapper .search-button:hover {
+    background-color: #752a2a !important;
+}
+
+.search-wrapper .search-label, .search-wrapper .search-button {
+    fill: #bfbfbf !important;
 }
 
 /* Fix for shitty border radiuses */
