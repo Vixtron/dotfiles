@@ -1,0 +1,443 @@
+/* Twitter modified by me, original by UndeadLeech*/
+
+@-moz-document domain("twitter.com") {
+  :root {
+    --bg-color: #1b1b1b;
+    --fg-color: #9e9e9e;
+    --secondary-bg-color: #262626;
+    --secondary-fg-color: #616161;
+    --highlight-color: #752a2a;
+  }
+
+  body, body:not(.edge-design), .ProfilePage, .AdaptiveSearchPage {
+    background-color: var(--bg-color) !important;
+    color: var(--fg-color) !important;
+  }
+
+  *, .AdaptiveSearchTimeline .stream .stream-item:first-child .tweet {
+    border-radius: unset !important;
+  }
+
+  /* TOP BAR */
+
+  .global-nav-inner {
+    background-color: var(--secondary-bg-color);
+  }
+  
+  .DashUserDropdown.dropdown-menu li > a, .DashUserDropdown.dropdown-menu button {
+    color: #949494 !important;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+  }
+
+  .bird-topbar-etched, .topbar-tweet-btn {
+    display: none !important;
+  }
+  
+  .global-nav-inner {
+    background: #1b1b1b !important;
+    height: 46px !important;
+  }
+  
+  .global-nav .search-input {
+    padding: 5px !important;
+  }
+
+  #user-dropdown-toggle, #user-dropdown-toggle::before, .Avatar, .search-input, .follow-button:focus {
+    box-shadow: none;
+  }
+
+  #user-dropdown {
+    margin: unset;
+  }
+
+  .ProfileCanopy-navBar, .search-input, .ProfileNav-item--userActions {
+    background-color: var(--bg-color) !important;
+  }
+
+  .search-input {
+    color: var(--fg-color) !important;
+    border: none !important;
+  }
+
+  /* TIMELINE */
+
+  .has-recap, .timeline-end, .caret-inner, .caret-outer, .ProfileCard .arrow, .Icon--verified::before, .Icon--close, .PermalinkOverlay-spinnerContainer, .pushstate-spinner, .ProfileNav-item--lists, .AdaptiveRelatedSearches, .LiveVideoHomePageModuleContainer, .PromptbirdPrompt, .ProfileClusterFollow, iframe {
+    display: none !important;
+  }
+
+  .new-tweets-bar, .tweet, .ThreadedConversation, .inline-reply-tweetbox, .TwitterCard-container, .QuoteTweet, .typeahead-accounts, .dropdown-divider {
+    border-color: var(--secondary-bg-color) !important;
+  }
+
+  .tweet:hover, #tweet-box-home-timeline, .new-tweets-bar:hover, .PermalinkOverlay .tweet-box, .edit-button, .ProfilePage-cancelButton, .ProfilePage-saveButton, .ProfileHeaderCardEditing, .DashboardProfileCard, .ProfileCard, .RetweetDialog-commentBox, .modal-overlay, .AdaptiveFiltersBar, .SidebarFilterModule, .PollXChoice-vote--button, .modal-body, .Tombstone, .PollXChoice-choice--chart, .follow-button > span {
+    background-color: var(--secondary-bg-color) !important;
+  }
+
+  .tweet-box, .new-tweets-bar, .tweet, .stream-footer, .ThreadedConversation-moreReplies, .inline-reply-tweetbox, .ProfileHeading-content, .ProfilePage-editingOverlay, .ProfileHeaderCardEditing-editableField, .ColorPicker-hexInput, .BirthdateSelect-button, .BirthdateSelect-selectField, .hovercard, .dropdown-menu, .TwitterCard-container:hover, .profile-social-proof, .message, .modal-content, .modal-header, .missing-tweets-bar, .permalink, .t1-select, .Gallery-content, .caution-btn, .cancel-action, .dismiss-module, .follow-button:hover > span {
+    background-color: var(--bg-color) !important;
+  }
+
+  .stream-footer .Icon, .follow-text .Icon, .twitter-atreply *, .user-dropdown:hover, .dropdown.open .plain-btn, .user-dropdown:focus, .Icon--verified, .twitter-hashtag *, .caution-btn {
+    color: var(--highlight-color) !important;
+  }
+
+  .fullname, .QuoteTweet-fullname, #tweet-box-home-timeline, .tweet, .SummaryCard-content, .tweet-content, div[contenteditable="true"]:focus, .ProfileHeading-toggleItem.is-active, .edit-button, .ProfilePage-cancelButton, .ProfilePage-saveButton, .ProfileHeaderCardEditing-editableField, .tweet-text, .typeahead strong, .DashboardProfileCard, .ColorPicker-hexInput:focus, .cancel-action, .follow-button > span {
+    color: var(--fg-color) !important;
+  }
+
+  .message, .ProfileHeaderCard .u-dir {
+    color: var(--secondary-fg-color) !important;
+  }
+
+  .tweet-btn {
+    color: var(--bg-color) !important;
+  }
+
+  .RichEditor, .stream-item, .stats, .avatar-row a, .timeline-tweet-box, .ProfileHeading-content, .edit-button, .ProfilePage-cancelButton, .ProfilePage-saveButton, .ProfileAvatar, .ProfileAvatarEditing, .ProfileHeaderCardEditing-editableField, .BirthdateSelect-button, .BirthdateSelect-selectField, .ProfileCard-avatarImage, .user-dropdown:focus, .DashboardProfileCard-avatarImage, .DashboardProfileCard-bg, .DashboardProfileCard, .ProfileCard, .ProfileCard-bg, .modal-header, .SidebarFilterModule, .t1-select, .block-section, .caution-btn, .cancel-action, .dismiss-module, .Tombstone {
+    border: none !important;
+  }
+
+  .tweet-btn, .ProfilePage-saveButton, .user-dropdown:focus, .modal-content, .caution-btn, .cancel-action {
+    box-shadow: none !important;
+  }
+
+  .edit-button, .ProfilePage-cancelButton, .PollXChoice-vote--button, .cancel-action {
+    background-image: none !important;
+  }
+
+  .dropdown-menu, .hovercard, .edit-button:hover, .follow-button:hover > span {
+    border: 1px solid var(--secondary-bg-color) !important;
+  }
+
+  .dropdown-menu, .hovercard, .edit-button, .PollXChoice-vote--button, .follow-button > span {
+    border: 1px solid var(--bg-color) !important;
+  }
+
+  .ProfileCard-avatarLink, .DashboardProfileCard-avatarLink {
+    background-color: #00000000;
+  }
+
+  .DashboardProfileCard-bg {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .content-main {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .ProfileHeaderCardEditing-bioRich .ProfileHeaderCardEditing-editableField {
+    min-height: 30px !important;
+  }
+
+  .modal-overlay {
+    opacity: 0.75;
+  }
+
+  /* Useless ads */
+
+  .Trends, .wtf-module, .Footer, .WhoToFollow, .ProfileTweetbox, .ScrollBump--recentlyFollowed {
+    display: none !important;
+  }
+}
+
+/* Twitch CSS */
+@-moz-document domain("twitch.tv") {
+  body {
+    background-color: #1b1b1b !important;
+  }
+  
+  .fp-side, .activity-card, .theme--dark .activity-attach-meta, .fp-carousel-nav {
+    background-color: #262626 !important;
+  }
+  
+  .fp-carousel__desc p {
+    background-color: #262626 !important;
+  }
+  
+  .activity-body p, .activity-meta__name, .fp-carousel__title, .card__title {
+    color: #949494 !important;
+  }
+  
+  select.form__input, textarea.form__input {
+    background-color: #1b1b1b !important;
+    box-shadow: inset 0 0 0 1px #752a2a,0 0 0 transparent;
+  }
+  
+  .fp-side__header, .activity-reason, .top-nav__nav-link, .cn-bar__displayname, .flex > * {
+    /*! color: #949494 !important; */
+  }
+  
+  .theme--dark a, .card__title {
+    color: #752a2a; 
+  }
+  
+  a, a:hover, {
+    color: #752a2a;
+  }
+  
+  .activity-meta {
+    padding: 1.5rem;
+    box-shadow: 0 1px 0 #1b1b1b;
+  }
+  
+  .fp-side__viewall {
+    background-color: #262626;
+  }
+  
+  .tse-scroll-content {
+    background-color: #1b1b1b;
+  }
+  
+  .top-nav__menu {
+    background-color: #262626;
+  }
+  
+  .form__input-group--icon-left select.form__input, .form__input-group--icon-left textarea.form__input, .form__input-group--icon-left .form__input[type="text"], .form__input-group--icon-left .form__input[type="email"], .form__input-group--icon-left .form__input[type="password"], .form__input-group--icon-left .form__input[type="search"] {
+    background-color: #1b1b1b;
+  }
+  
+  .theme--dark .sc-header {
+    color: #949494;
+    box-shadow: 0 -1px 0 #752a2a inset;
+  }
+  
+  .has-sc .sc-search {
+    background-color: #1b1b1b; 
+  }
+  
+  .theme--dark .sc-search {
+    border-top: 1px solid #1b1b1b;
+  }
+  
+  .theme--dark .form__input[type="text"] {
+    box-shadow: inset 0 0 0 1px #752a2a,0 0 0 transparent;
+    background-color: #1b1b1b;
+    color: #752a2a;
+  }
+  
+  .conversations-content .conversations-list-icon {
+    background-color: #262626;
+  }
+  
+  .conversations-content .conversations-list-bottom-bar {
+    background: #000;
+    border: 1px solid #6;
+  }
+  
+  .button:hover, .button:focus {
+    background: #752a2a;
+  }
+  
+  .cn-bar {
+    background-color: #262626;
+    box-shadow: inset 0 -1px 0 #262626,0 -1px 1px #262626;
+  }
+  
+  .cn-tabs__item--withseparator::after {
+    border-right: 1px solid #262626;
+  }
+  
+  .cn-bar__avatar-wrap {
+    background: #752a2a;
+    border: none;
+  }
+  
+  a {
+    color: #752a2a !important;
+  }
+  
+  .c-background {
+    background-color: #262626 !important;
+  }
+  
+  .brick {
+    border: 1px solid #1b1b1b
+  }
+  
+  .tw-tabs {
+    box-shadow: inset 0 -1px 0 #752a2a;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .tw-tabs__item > a.active, .tw-tabs__item > button.active {
+    color: #bfbfbf;
+    box-shadow: 0 -1px 0 #752a2a inset;
+  }
+  
+  .tw-tabs__item > a, .tw-tabs__item > button {
+    color: #949494;
+  }
+  
+  .ember-chat .chat-header {
+    background: #1b1b1b;
+    border-top: none;
+  }
+  
+  .pinned-cheer__top-bar {
+    background-color: #262626;
+    color: #752a2a;
+  }
+  
+  .sticky-message--pinned-cheers {
+    background: #1b1b1b;
+    border-bottom: 1px solid #752a2a;
+  }
+  
+  .ember-chat .chat-header {
+    background: #1b1b1b;
+    box-shadow: inset 0 -1px 0 0 #262626;
+  }
+  
+  .ember-chat .chat-interface {
+    background-color: #1b1b1b;
+    border-top: 1px solid #262626 !important;
+  }
+  
+  .ember-chat .chat-interface .textarea-contain textarea {
+    padding-top: 5px;
+    margin-top: 10px;
+  }
+  
+  .ember-chat .chat-messages .chat-line {
+    background-color: #262626;
+    color: #949494;
+  }
+  
+  .chat-container {
+    border-left: none;
+  }
+  
+  .button {
+    background: #752a2a;
+    color: #000;
+  }
+  
+  .button--hollow:hover {
+    color: #fff;
+  }
+  
+  .button--hollow, .button--radio, .button--checkbox {
+    box-shadow: inset 0 0 0 1px #752a2a;
+  }
+  
+  .button--icon-only figure svg {
+    fill: #000;
+  }
+  
+  .button--icon-only:hover figure svg {
+    fill: #000;
+  }
+  
+  .panel-formatting .panel .description h1, .panel-formatting .panel .description p, .panel-formatting .panel h3 {
+    color: #949494;
+  }
+  
+  .pinned-cheers .svg-bits-trophy path, .pinned-cheers .svg-bits-hourglass path {
+    fill: #752a2a;
+  }
+  
+  .player-mini__titlebar {
+    background: #1b1b1b;
+  }
+  
+  .button--status.button--icon.button--icon-only figure svg, .button figure svg, .button figure img, .top-nav__overflow svg path {
+    fill: #000;
+  }
+  
+  .top-nav .notification-center__icon svg, .top-nav__prime-anchor .prime-logo-crown svg {
+    fill: #949494;
+  }
+  
+  .top-nav__prime-link {
+    background: #262626;
+  }
+  
+  .button figure svg, .button figure img {
+    fill: #000;
+  }
+  
+  .theme--dark .sc-item__title, .theme--dark .sc-empty-state__text {
+    color: #bfbfbf !important;
+  }
+  
+  .bits-toggle path, .emoticon-selector-toggle svg path {
+    fill: #949494;
+  }
+  
+  .moderation-card__actions {
+    background-color: #1b1b1b;
+    border: none;
+  }
+  
+  .emoticon-selector .emoticon-selector-box .all-emotes, .emoticon-selector .emoticon-selector-box .channel-emotes {
+    background: #1b1b1b;
+  }
+  
+  .pd-1 {
+    background: #1b1b1b;
+    border-top: #752a2a;
+  }
+  
+  .form__input[type="text"] {
+    background: #262626;
+    box-shadow: inset 0 0 0 1px #752a2a,0 0 0 transparent;
+  }
+  
+  .emoticon-selector .emoticon-selector__tabs {
+    color: #752a2a;
+    border-top: 1px solid #752a2a;
+    background: #1b1b1b;
+  }
+  
+  .emoticon-selector .emoticon-selector__tabs .emoticon-selector__tab:hover {
+    border-top: 1px solid #752a2a !important;
+    color: #949494;
+  }
+  
+  .emoticon-selector .emoticon-selector__tabs .emoticon-selector__tab, .emoticon-selector .emoticon-selector__tabs .emoticon-selector__tab:focused {
+    color: #949494;
+  }
+  
+  .emoticon-selector .emoticon-selector__tabs .emoticon-selector__tab.active {
+    color: #949494;
+    border-top: 1px solid #752a2a
+  }
+  
+  .emoticon-selector .emoticon-selector-box {
+    color: #949494;
+  }
+  
+  .button__num-block {
+    color: #000;
+  }
+  
+  .emoticon-selector-toggle.toggled svg path {
+    fill: #949494;
+  }
+  
+  fixed-layout [fixed-layout-content] {
+    background-color: #262626 !important;
+  }
+  
+  h2, h5,p, h6, ol, ul, li, .mg-t-2 {
+    color: #949494;
+    
+  }
+  
+  .c-background-alt-2, .c-background-alt {
+    background: #262626 !important;
+    color: #949494;
+  }
+  
+  .fp-carousel__desc p {
+    background-color: #262626 !important;
+  }
+}
