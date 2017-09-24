@@ -3,6 +3,7 @@
     --backbutton-background: #444444 !important;
     --toolbar-non-lwt-bgimage: none !important;
     --tab-toolbar-navbar-overlap: 1px !important;
+    --tab-line-color: #1b1b1b !important;
 }
 
 #urlbar {
@@ -33,6 +34,14 @@ toolbarbutton:hover {
 
 .tabbrowser-tab::after, .tabbrowser-tab::before {
     border-left: none !important;
+}
+
+.icon.icon-settings {
+    display: none;
+}
+
+.outer-wrapper {
+    background: #1b1b1b;
 }
 
 /* Fix for shitty border radiuses */
