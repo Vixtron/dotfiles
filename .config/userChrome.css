@@ -55,6 +55,32 @@ toolbarbutton:hover {
     margin-left: 750px !important;
 }
 
+.contentSearchSuggestionTable {
+    background-color: #1b1b1b !important;
+    color: #949494 !important;
+    border: 1px solid #262626 !important;
+    border-top: none;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, .1);
+}
+
+.contentSearchSuggestionsList {
+    border-bottom: none;
+}
+
+.contentSearchOneOffItem {
+    background-image: none;
+}
+
+.contentSearchHeader {
+    background-color: #262626 !important;
+    color: #949494 !important;
+    border-bottom: none;
+}
+
+#onboarding-overlay-button.onboarding-watermark:hover > #onboarding-overlay-button-icon {
+    display: none;
+}
+
 .search-wrapper {
     margin: 300px 0 40px !important;
     height: 36px !important;
@@ -68,21 +94,20 @@ toolbarbutton:hover {
 }
 
 .search-wrapper input:hover {
-    border-color: #752a2a !important;
+    border-color: none;
     box-shadow: none !important;
 }
 
 .search-wrapper input:focus {
-    box-shadow: 0 0px 4px 0 #752a2a !important;
+    box-shadow: none;
 }
 
-
-.search-wrapper .search-button:hover {
-    background-color: #752a2a !important;
-}
-
-.search-wrapper .search-label, .search-wrapper .search-button {
+.search-wrapper .search-label {
     fill: #bfbfbf !important;
+}
+
+.search-wrapper .search-button {
+    display: none !important;
 }
 
 /* Fix for shitty border radiuses */
