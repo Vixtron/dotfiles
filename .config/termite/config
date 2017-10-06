@@ -1,5 +1,6 @@
 [options]
 font = Noto Mono 10
+scrollbar = left
 padding = 8
 border_width = 8
 scroll_on_output = false
@@ -11,7 +12,7 @@ dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
 #font = Noto Mono 9
-scrollback_lines = 10000
+scrollback_lines = infinite
 search_wrap = true
 #icon_name = terminal
 #geometry = 640x480
@@ -37,9 +38,6 @@ filter_unmatched_urls = true
 [colors]
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
-foreground = #dcdccc
-foreground_bold = #ffffff
-background = #1F1F1F
 
 # 20% background transparency (requires a compositor)
 #background = rgba(63, 63, 63, 0.8)
@@ -53,7 +51,7 @@ highlight = #2f2f2f
 foreground      = #a6a6a6
 foreground_bold = #a6a6a6
 cursor          = #a6a6a6
-background      = #1b1b1b
+background      = #141414
 
 # black
 color0  = #303030
@@ -65,27 +63,27 @@ color9  = #752a2a
 
 # green
 color2  = #752a2a
-color10 = #8b4343
+color10 = #752a2a
 
 # yellow
 color3  = #595958
 color11 = #595958
 
 # blue
-color4  = #752a2a
-color12 = #d8a558
+color4  = #4b7462
+color12 = #8b4343
 
 # magenta
 color5  = #9a413d
 color13 = #752a2a
 
 # cyan
-color6  = #9a413d
-color14 = #9a413d
+color6  = #f9cc75
+color14 = #752a2a
 
 # white
-color7  = #c6c6c6
-color15 = #ffffff
+color7  = #949494
+color15 = #a6a6a6
 
 
 [hints]
