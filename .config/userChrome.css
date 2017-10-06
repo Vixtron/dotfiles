@@ -1,27 +1,43 @@
 :root {
-    --toolbar-non-lwt-bgcolor: #1b1b1b !important;
+    --toolbar-non-lwt-bgcolor: #141414 !important;
     --backbutton-background: #444444 !important;
     --toolbar-non-lwt-bgimage: none !important;
     --tab-toolbar-navbar-overlap: 1px !important;
-    --tab-line-color: #1b1b1b !important;
+    --tab-line-color: #752a2a !important;
 }
 
+/* Hide scrollbars */
+
+div {
+    overflow: hidden !important;
+}
+
+div iframe {
+    border: 0 !important;
+    overflow: visiblehidden !important;
+}
+
+body {
+  overflow-y: hidden !important;
+}
+
+
 #urlbar {
-    background-color: #282828 !important;
+    background-color: #1a1a1a !important;
     border-radius: 0px !important;
 }
 
 .tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
     color: #949494 !important;
-    background-color: #282828 !important;
+    background-color: #1a1a1a !important;
 }
 
 #TabsToolbar .tab-background[selected] {
-    background-color: #1b1b1b !important;
+    background-color: #141414 !important;
 }
 
 #TabsToolbar .tab-background {
-    background-color: #282828 !important;
+    background-color: #1a1a1a !important;
 }
 
 toolbarbutton:hover {
@@ -41,44 +57,40 @@ toolbarbutton:hover {
 }
 
 .outer-wrapper {
-    background: #1b1b1b !important;
-}
-
-#onboarding-overlay-button {
-    align-self: center !important;
+    background: #141414 !important;
 }
 
 #onboarding-overlay-button > img {
     background-repeat: no-repeat !important;
     width: 400px !important;
     margin-top: 50px !important;
-    margin-left: 750px !important;
+    margin-left: 735px !important;
 }
 
 .contentSearchSuggestionTable {
-    background-color: #1b1b1b !important;
+    background-color: #141414 !important;
     color: #949494 !important;
     border: 1px solid #262626 !important;
-    border-top: none;
-    box-shadow: 0 5px 10px hsla(0, 0%, 0%, .1);
+    border-top: none !important;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, .1) !important;
 }
 
 .contentSearchSuggestionsList {
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 .contentSearchOneOffItem {
-    background-image: none;
+    background-image: none !important;
 }
 
 .contentSearchHeader {
     background-color: #262626 !important;
     color: #949494 !important;
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 #onboarding-overlay-button.onboarding-watermark:hover > #onboarding-overlay-button-icon {
-    display: none;
+    display: none !important;
 }
 
 .search-wrapper {
@@ -89,17 +101,18 @@ toolbarbutton:hover {
 .search-wrapper input {
     box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
     border: 1px solid #262626 !important;
+    border-radius: 0 !important;
     box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
     color: #949494 !important;
 }
 
 .search-wrapper input:hover {
-    border-color: none;
+    border-color: none !important;
     box-shadow: none !important;
 }
 
 .search-wrapper input:focus {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .search-wrapper .search-label {
@@ -121,5 +134,5 @@ toolbarbutton:hover {
 }
 
 #main-window, browser[type="content-primary"], browser[type="content"], tabbrowser#content, #content, browser[type="content"] > html {
-  background: #1b1b1b !important;
+  background: #141414 !important;
 }
