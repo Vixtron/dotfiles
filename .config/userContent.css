@@ -2,13 +2,32 @@
 
 @-moz-document domain("twitter.com") {
   :root {
-    --bg-color: #1b1b1b;
+    --bg-color: #141414;
     --fg-color: #9e9e9e;
-    --secondary-bg-color: #262626;
+    --secondary-bg-color: #1a1a1a;
     --secondary-fg-color: #616161;
     --highlight-color: #752a2a;
   }
+  
+  .Tombstone .Tombstone-action:hover {
+    color: #657786 !important;
+    background: var(--secondary-bg-color) !important;
+  }
+  
+  .ThreadedConversation-showMoreThreads {
+    background: #141414 !important;
+    border-bottom: none !important;
+  }
+  
+  .ThreadedConversation--header {
+    background: var(--secondary-bg-color) !important;
+    border: none !important;
+  }
 
+  .DashboardProfileCard-avatarLink {
+    background-color: none !important;
+  }
+  
   body, body:not(.edge-design), .ProfilePage, .AdaptiveSearchPage {
     background-color: var(--bg-color) !important;
     color: var(--fg-color) !important;
@@ -17,11 +36,15 @@
   *, .AdaptiveSearchTimeline .stream .stream-item:first-child .tweet {
     border-radius: unset !important;
   }
+  
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:hover, .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:focus, .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:active {
+    background-color: #141414 !important;
+  }
 
   /* TOP BAR */
 
   .global-nav-inner {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color) !important;
   }
   
   .DashUserDropdown.dropdown-menu li > a, .DashUserDropdown.dropdown-menu button {
@@ -36,7 +59,7 @@
   }
   
   .global-nav-inner {
-    background: #1b1b1b !important;
+    background: #141414 !important;
     height: 46px !important;
   }
   
@@ -45,7 +68,7 @@
   }
 
   #user-dropdown-toggle, #user-dropdown-toggle::before, .Avatar, .search-input, .follow-button:focus {
-    box-shadow: none;
+    box-shadow: none !important;
   }
 
   #user-dropdown {
