@@ -1,7 +1,6 @@
 /* Twitter and Discord modified by me, original by UndeadLeech*/
-
-@-moz-document domain("discordapp.com") {
-  :root {
+@-moz-document domain("canary.discordapp.com") {
+:root {
   --bg-color: #141414;
   --fg-color: #9e9e9e;
   --secondary-bg-color: #1a1a1a;
@@ -22,6 +21,12 @@
                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
 }
+ 
+/* Textbox fix */
+.textArea-20yzAH {
+  margin-top: 0px !important;
+  margin-bottom: -6px !important;
+}
 
 .private-channel-recipients-invite .friend, .search-popout .option.selected::after, .friend-table-add-header, .search-popout .option::after, .connected-account-verified-icon, .channel.private:hover, .channel-arrow, #user-profile-modal .header, #user-profile-modal .guild:hover, .channel-members .member:hover, .clipboard-input-copied button, .is-local-bot-message, .cardPrimaryEditable-2IQ7-V, .headerNormal-1cioxU {
   background: unset !important;
@@ -31,7 +36,7 @@
   background-color: var(--bg-color) !important;
 }
 
-.guild-header > header, .chat > .title-wrap, .account .btn, .channel-textarea-inner, .comment code.inline, .embed-color-pill, .embed, .ui-card, .ui-button.filled, .ui-tab-bar-item.selected, .popout-menu, .ui-audit-log-clickable .header, .ui-audit-log-change-details, .ui-search-bar, .themed-popout .header, .themed-popout .message-group, .messages-popout-wrap .has-more button, .jump-to-present-bar, .messages-popout .action-buttons, .message-group .markup pre code, .quick-message, #user-profile-modal .header, #user-profile-modal .tab-bar-container, #user-profile-modal .avatar-wrapper, #user-profile-modal .guild:hover, .context-menu .item:hover, #user-profile-modal .btn.add-friend:hover, .scrollbar .thumb:after, .new-messages-bar, .form .btn-primary, .channel-textarea-autocomplete-inner .active, .channel-textarea-autocomplete-inner header, .channel.private.selected a, .channel.private:hover a, .private-channels .btn-friends:hover a, .private-channels .btn-friends.selected a, .friends-column-separator, .friends-row:hover, .friends-action:hover, #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover, .tab-bar-item-primary, .tab-bar-item.selected, .tab-bar-item:hover, .search-bar-tag, .private-channel-recipients-invite button:hover, .private-channel-recipients-invite .footer, .upload-modal .button-primary, .channel-members .member:hover, .search-bar.search-bar-light .search-bar-inner, .emoji-picker .emoji-item.selected, .create-guild-container .action, .guilds-wrapper .guild-inner, .search-popout .option.selected, .search-results-wrap .search-result .hit, .search-results-wrap .search-header, .search-answer, .search-filter, .has-more button, .divider:not(.divider-red) div, .option-popout, .emoji-picker .thumb, .private-channels .thumb, .icon-friends, #friends .btn, .bot-tag, .search-popout .date-picker .hint-value, .react-datepicker__header, .react-datepicker, .Select-control, .Select-menu-outer, #instant-invite-modal .clipboard-input-inner input, #instant-invite-modal .copy, .invite-button, .radio-inner, .ui-popout-list, .ui-popout-list .scrollbar .pad, .ui-popout-list .scrollbar .track, .ui-audit-log .header, .ui-hover-card::before, .slider-handle, .guilds-add, .join-server input, .region-select-inner, .region-select button, .avatar-uploader-inner, .region-select-modal-option, .jump-button:hover, .ui-settings-notice, .tooltip, #rtc-connection .btn, #rtc-connection-popout header, .message-group-blocked-btn, .channel-textarea-guard button, .contentSelectedText-3j5CXt, .contentHoveredText-2HYGIY, .cardPrimary-ZVL9Jr, .buttonBrandFilledDefault-2Rs6u5, .cardPrimaryEditable-2IQ7-V, .thumb-3VsfAI, .itemDefaultSelected-1UAWLe, .itemDefault-3NDwnY:hover, .switch-3lyafC, .bar-2cFRGz, .markDash-3j1QxS, .header-1tSljs, .buttonRedFilledDefault-1TrZ9q, .message-25xg43, .contentHoveredVoice-3qGNKh:active, .inner-3if5cm, .autocompleteInner-N7OQf1, .body-3rkFrF, .quickswitcher .big-input, .unreadBottom-2LxhSR, .unreadBottom-2LxhSR, .quickswitcher .result.selected, .unreadBottom-2LxhSR, .draggable-3SphXU:active > *, .contentSelectedVoice-gTtYM9.content-2mSKOj:active {
+.guild-header > header, .chat > .title-wrap, .account .btn, .channel-textarea-inner, .comment code.inline, .embed-color-pill, .embed, .ui-card, .ui-button.filled, .ui-tab-bar-item.selected, .popout-menu, .ui-audit-log-clickable .header, .ui-audit-log-change-details, .ui-search-bar, .themed-popout .header, .themed-popout .message-group, .messages-popout-wrap .has-more button, .jump-to-present-bar, .messages-popout .action-buttons, .message-group .markup pre code, .quick-message, #user-profile-modal .header, #user-profile-modal .tab-bar-container, #user-profile-modal .avatar-wrapper, #user-profile-modal .guild:hover, .context-menu .item:hover, #user-profile-modal .btn.add-friend:hover, .scrollbar .thumb:after, .new-messages-bar, .form .btn-primary, .channel-textarea-autocomplete-inner .active, .channel-textarea-autocomplete-inner header, .channel.private.selected a, .channel.private:hover a, .private-channels .btn-friends:hover a, .private-channels .btn-friends.selected a, .friends-column-separator, .friends-row:hover, .friends-action:hover, #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover, .tab-bar-item-primary, .tab-bar-item.selected, .tab-bar-item:hover, .search-bar-tag, .private-channel-recipients-invite button:hover, .private-channel-recipients-invite .footer, .upload-modal .button-primary, .channel-members .member:hover, .search-bar.search-bar-light .search-bar-inner, .emoji-picker .emoji-item.selected, .create-guild-container .action, .guilds-wrapper .guild-inner, .search-popout .option.selected, .search-results-wrap .search-result .hit, .search-results-wrap .search-header, .search-answer, .search-filter, .has-more button, .divider:not(.divider-red) div, .option-popout, .emoji-picker .thumb, .private-channels .thumb, .icon-friends, #friends .btn, .bot-tag, .search-popout .date-picker .hint-value, .react-datepicker__header, .react-datepicker, .Select-control, .Select-menu-outer, #instant-invite-modal .clipboard-input-inner input, #instant-invite-modal .copy, .invite-button, .radio-inner, .ui-popout-list, .ui-popout-list .scrollbar .pad, .ui-popout-list .scrollbar .track, .ui-audit-log .header, .ui-hover-card::before, .slider-handle, .guilds-add, .join-server input, .region-select-inner, .region-select button, .avatar-uploader-inner, .region-select-modal-option, .jump-button:hover, .ui-settings-notice, .tooltip, #rtc-connection .btn, #rtc-connection-popout header, .message-group-blocked-btn, .channel-textarea-guard button, .contentSelectedText-3j5CXt, .contentHoveredText-2HYGIY, .cardPrimary-ZVL9Jr, .buttonBrandFilledDefault-2Rs6u5, .cardPrimaryEditable-2IQ7-V, .thumb-3VsfAI, .itemDefaultSelected-1UAWLe, .itemDefault-3NDwnY:hover, .switch-3lyafC, .bar-2cFRGz, .markDash-3j1QxS, .header-1tSljs, .buttonRedFilledDefault-1TrZ9q, .message-25xg43, .contentHoveredVoice-3qGNKh:active, .inner-3if5cm, .autocompleteInner-N7OQf1, .body-3rkFrF, .quickswitcher .big-input, .quickswitcher .result.selected, .draggable-3SphXU:active > *, .contentSelectedVoice-gTtYM9.content-2mSKOj:active, .unread-2TDDFN {
   background-color: var(--secondary-bg-color) !important;
 }
 
@@ -47,7 +52,7 @@
   background-color: var(--darkest-bg-color) !important;
 }
 
-.messages .divider.divider-red div, .mentioned .message-text::after, .badge, .checkbox input[type="checkbox"]:checked + span, .guild.selected::before, .guild.unread::before, .react-datepicker__day--today::after, :not(.react-datepicker__day--disabled).react-datepicker__day:hover, .invite-button-icon.accepted, .radio-inner span::after, .ui-popout-list .ui-selectable-item.selected, .slider-bar-fill, .unread-23Kvxk, .wrapper-2xO9RX, .switch-3lyafC.checked-7qfgSb, .barFill-18ABna, .unreadTop-25fmEL {
+.messages .divider.divider-red div, .mentioned .message-text::after, .badge, .checkbox input[type="checkbox"]:checked + span, .guild.selected::before, .guild.unread::before, .react-datepicker__day--today::after, :not(.react-datepicker__day--disabled).react-datepicker__day:hover, .invite-button-icon.accepted, .radio-inner span::after, .ui-popout-list .ui-selectable-item.selected, .slider-bar-fill, .unread-23Kvxk, .wrapper-2xO9RX, .switch-3lyafC.checked-7qfgSb, .barFill-18ABna, .mention-RlZ5F3 {
   background-color: var(--highlight-color) !important;
 }
 
@@ -71,7 +76,7 @@
   color: var(--secondary-highlight-color) !important;
 }
 
-.badge, :not(.react-datepicker__day--disabled).react-datepicker__day:hover, .ui-popout-list .ui-selectable-item.selected, .wrapper-2xO9RX {
+.badge, :not(.react-datepicker__day--disabled).react-datepicker__day:hover, .ui-popout-list .ui-selectable-item.selected, .wrapper-2xO9RX, .mention-RlZ5F3, .mention-RlZ5F3 svg {
   color: var(--bg-color) !important;
 }
 
@@ -88,8 +93,8 @@
 }
 
 .avatarStatus-1g8f0K {
-  border-left: 3px solid #141414 !important;
-  border-top: 3px solid #141414 !important;
+  border-left: 3px solid #1b1b1b !important;
+  border-top: 3px solid #1b1b1b !important;
   border-right: unset !important;
   border-bottom: unset !important;
 }
@@ -268,6 +273,11 @@
   position: unset !important;
 }
 
+/* "NEW MENTION" outside of viewport weight */
+.mention-RlZ5F3 {
+  font-weight: 600 !important;
+}
+
 /* Don't ask me why but this needs two separate statements */
 ::-moz-selection {
   background-color: var(--highlight-color) !important;
@@ -290,6 +300,7 @@
   border-color: var(--bg-color) !important;
   }
 }
+
 @-moz-document domain("twitter.com") {
   :root {
     --bg-color: #141414;
