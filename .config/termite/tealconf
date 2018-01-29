@@ -53,7 +53,7 @@ background      = #242529
 
 # black
 color0  = #ffffff
-color8  = #ffffff
+color8  = #f0c674
 
 # red
 color1  = #a54242
@@ -65,7 +65,7 @@ color10 = #b5bd68
 
 # yellow
 color3  = #de935f
-color11 = #f0c674
+color11 = #303136
 
 # blue
 color4  = #f4924a
@@ -82,6 +82,7 @@ color14 = #8abeb7
 # white
 color7  = #707880
 color15 = #c5c8c6
+
 
 [hints]
 #font = Monospace 12
