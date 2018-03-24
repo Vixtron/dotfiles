@@ -5,8 +5,6 @@ nitrogen --restore &
 compton --config ~/.config/compton/config -b
 xsetroot -cursor_name left_ptr
 polybar watch &
-setxkbmap dvorak &
-greenclip daemon &
 
 bspc monitor -d     
 
