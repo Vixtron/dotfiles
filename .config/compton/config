@@ -72,8 +72,9 @@ inactive-opacity-override = false;
 alpha-step = 0.06;
 
 opacity-rule = [
-#    "100:class_g = 'Termite'",
-    "100:name *= 'Polybar'"
+#   "100:class_g = 'Termite'",
+    "90:class_g = 'Polybar'",
+    "96:class_g = 'Rofi'"
 ];
 
 blur-background = true;
