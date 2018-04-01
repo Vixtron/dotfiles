@@ -1,0 +1,171 @@
+;   _____                       __  .__        
+;  /  _  \   ________ _______ _/  |_|__|__  ___
+; /  /_\  \ / ____/  |  \__  \\   __\  \  \/  /
+;/    |    < <_|  |  |  // __ \|  | |  |>    < 
+;\____|__  /\__   |____/(____  /__| |__/__/\_ \
+;        \/    |__|          \/              \/
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = false
+inline-mode = false
+enable-click = true
+enable-scroll = true
+reverse-scroll = false
+fuzzy-match = true
+workspace-label = %index%
+label-monitor = %name%
+label-mode-padding = 4
+format = <label-state>
+format-background = #333333
+format-prefix = "    "
+format-prefix-foreground = #1a1a1a
+format-prefix-background = #ed8712
+format-prefix-padding = 0
+label-focused = %name%
+label-focused-foreground = #bfbfbf
+label-focused-padding = 3
+
+label-empty = %name%
+label-empty-foreground = #8c8c8c
+label-empty-padding = 3
+
+label-occupied = %name%
+label-occupied-foreground = #8c8c8c
+label-occupied-padding = 3
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format-cpu = <format-prefix> <label>
+format-prefix = "    "
+format-prefix-background = #404040
+label-background = #333333
+label = "%percentage%%"
+label-padding = 2
+format-prefix-padding = 0
+format-prefix-foreground = #bfbfbf
+
+[module/xwindow]
+type = internal/xwindow
+format-cpu = <format-prefix> <label>
+format-prefix = "    "
+format-prefix-background = #404040
+label = %title:0:75:...%
+label-background = #333333
+label-padding = 2
+label-foreground = #bfbfbf
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %l:%M %p
+date-alt = %A, %d %B %Y
+time-alt = %l:%M:%S
+label = "%date%"
+label-background = #ed8712
+label-foreground = #1a1a1a
+label-padding = 2
+
+[module/date2]
+type = internal/date
+interval = 1.0
+
+format-date = <label>
+date = "%d/%b"
+label = "%date%"
+label-background = #333333
+label-foreground = #bfbfbf
+label-padding = 2
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = #404040
+ramp-volume-0 = "     "
+ramp-volume-1 = "     "
+ramp-volume-2 = "     "
+format-volume-padding = 0
+label-volume = "%percentage%%"
+label-volume-background = #333333
+label-volume-padding = 2
+format-volume-foreground = #bfbfbf
+mapping = true
+
+[module/memory]
+type = internal/memory
+interval = 0.5
+format-cpu = <format-prefix> <label>
+format-prefix = "    "
+format-prefix-background = #404040
+label-background = #333333
+label = "%percentage_used%%"
+label-padding = 2
+format-prefix-padding = 0
+format-prefix-foreground = #bfbfbf
+
+; Not used in this bar.
+[module/volramp]
+type = internal/volume
+
+format-volume = <bar-volume>
+format-volume-padding = 1
+bar-volume-width = 13
+bar-volume-height = 13
+bar-volume-foreground-0 = #752a2a
+bar-volume-foreground-1 = #752a2a
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-foreground = #404040
+format-muted-prefix = " "
+format-muted-foreground = #752a2a
+label-muted = Muted
+
+bar-volume-indicator-font = 3
+bar-volume-fill = ─
+bar-volume-fill-font = 3
+bar-volume-empty = ─
+bar-volume-empty-foreground = #404040
+bar-volume-empty-font = 3
+
+[bar/watch]
+monitor = DP-0
+monitor-strict = false
+bottom = false
+width = 100%
+height = 20
+fixed-center = true
+offset-x = 0
+offset-y = 0
+background = #212121
+foreground = #ccc
+radius = 0.0
+line-size = 1
+line-color = #212121
+border-size = 0
+border-bottom = 8
+border-top = 8
+border-color = #212121
+padding = 3
+module-margin = 2
+override-redirect = false
+wm-restack = bspwm
+font-0 = NotoSans-Regular:size=10;2
+font-1 = Junicode-Bold:size=10;2
+font-2 = DroidSansGeorgian-Bold:size=10;2
+font-3 = NotoSansMongolian-Bold:size=10;2
+font-4 = DroidSansHebrew-Bold:size=10;2
+font-5 = siji-Bold:size=10;2
+font-6 = fontawesome:size=10;3
+font-7 = sourcehansansjp:size=11;3
+modules-left = bspwm xwindow
+modules-center =
+modules-right = memory cpu volume date2 date
+border-bottom-size = 2
+border-bottom-color = #212121
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
