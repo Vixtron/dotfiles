@@ -4,24 +4,22 @@
 # https://github.com/dylanaraps/neofetch
 
 print_info() {
-    info title
-    info underline
+#    info title
+#    info underline
 
     info "OS" distro
     info "KL" kernel
     info "UP" uptime
-    info "PK" packages
+#    info "PK" packages
     info "SH" shell
     info "WM" wm
     info "TR" term
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Mem" memory
-    info "Disk" disk
-    info "Font" font
+#    info "CPU" cpu
+#    info "GPU" gpu
+#    info "Mem" memory
+#    info "Disk" disk
+#    info "Font" font
 
-    info line_break
-    info cols
     info line_break
 }
 
@@ -54,7 +52,7 @@ bold="on"
 underline_enabled="on"
 underline_char="ー"
 block_range=(0 15)
-color_blocks="on"
+color_blocks="off"
 block_width=3
 block_height=1
 bar_char_elapsed="-"
@@ -68,7 +66,7 @@ memory_display="off"
 battery_display="off"
 disk_display="off"
 image_backend="ascii"
-image_source="arch"
+image_source="/home/vix/.nf-ascii"
 ascii_distro="auto"
 ascii_colors=(distro)
 ascii_bold="on"
