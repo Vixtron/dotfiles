@@ -1,5 +1,6 @@
+ 
 [Configuration]
-FontName=Noto Mono 10
+FontName=Fira Mono 10
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=FALSE
@@ -32,4 +33,3 @@ MiscSlimTabs=FALSE
 MiscNewTabAdjacent=FALSE
 ColorPalette=rgb(25,25,25);rgb(172,65,66);rgb(144,169,89);rgb(244,191,117);rgb(106,159,181);rgb(170,117,159);rgb(117,181,170);rgb(97,97,97);rgb(38,38,38);rgb(117,42,42);rgb(93,116,42);rgb(117,78,42);rgb(42,78,116);rgb(112,54,100);rgb(41,115,102);rgb(158,158,158)
 ColorBoldIsBright=FALSE
- 
