@@ -1,0 +1,141 @@
+    :root {
+        --toolbar-non-lwt-bgcolor: #141414 !important;
+        --backbutton-background: #191919 !important;
+        --toolbar-non-lwt-bgimage: none !important;
+        --tab-toolbar-navbar-overlap: 1px !important;
+        --tab-line-color: #752a2a !important;
+    }
+
+    window  {
+      font: 13px Fira Sans Medium !important;
+    }
+
+    /* Hide scrollbars */
+
+    div {
+        overflow: hidden !important;
+    }
+
+    div iframe {
+        border: 0 !important;
+        overflow: visiblehidden !important;
+    }
+
+    body {
+      overflow-y: hidden !important;
+    }
+
+
+    #urlbar {
+        background-color: #1a1a1a !important;
+        border-radius: 0px !important;
+    }
+
+    .tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
+        color: #949494 !important;
+        background-color: #1a1a1a !important;
+    }
+
+    #TabsToolbar .tab-background[selected] {
+        background-color: #141414 !important;
+    }
+
+    #TabsToolbar .tab-background {
+        background-color: #1a1a1a !important;
+    }
+
+    toolbarbutton:hover {
+        color: #949494 !important;
+    }
+
+    .toolbarbutton-animatable-box, .toolbarbutton-1 {
+        fill: #9e9e9e !important;
+    }
+
+    .tabbrowser-tab::after, .tabbrowser-tab::before {
+        border-left: none !important;
+    }
+
+    .icon.icon-settings {
+        display: none !important;
+    }
+
+    .outer-wrapper {
+        background: #141414 !important;
+    }
+
+    .contentSearchSuggestionTable {
+        background-color: #141414 !important;
+        color: #949494 !important;
+        border: 1px solid #262626 !important;
+        border-top: none !important;
+        box-shadow: 0 5px 10px hsla(0, 0%, 0%, .1) !important;
+    }
+
+    .contentSearchSuggestionsList {
+        border-bottom: none !important;
+    }
+
+    .contentSearchOneOffItem {
+        background-image: none !important;
+    }
+
+    .contentSearchHeader {
+        background-color: #262626 !important;
+        color: #949494 !important;
+        border-bottom: none !important;
+    }
+    #onboarding-overlay-button {
+        display: none !important;
+    }
+
+    #onboarding-overlay-button.onboarding-watermark:hover > #onboarding-overlay-button-icon {
+        display: none !important;
+    }
+
+    .search-wrapper {
+        margin: 300px 0 40px !important;
+        height: 36px !important;
+    }
+
+    .search-wrapper input {
+        box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
+        border: 1px solid #262626 !important;
+        border-radius: 0 !important;
+        box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1) !important;
+        color: #949494 !important;
+    }
+
+    .search-wrapper input:hover {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+
+    .search-wrapper input:focus {
+        box-shadow: none !important;
+    }
+
+    .search-wrapper .search-label {
+        fill: #bfbfbf !important;
+    }
+
+    .search-wrapper .search-button {
+        display: none !important;
+    }
+
+
+    /* Fix for shitty border radiuses */
+
+    .close-icon > .button-icon, .close-icon > .button-box > .button-icon, .close-icon > .toolbarbutton-icon {
+        border-radius: 0px !important;
+    }
+
+    .findbar-button > .toolbarbutton-text, toolbarbutton.bookmark-item:not(.subviewbutton), toolbar .toolbarbutton-1 > .toolbarbutton-icon, toolbar .toolbarbutton-1 > .toolbarbutton-text, toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+        border-radius: 0px !important;
+    }
+
+    #main-window, browser[type="content-primary"], browser[type="content"], tabbrowser#content, #content, browser[type="content"] > html {
+      background: #141414 !important;
+    }
+     
+
