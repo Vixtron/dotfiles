@@ -1,5 +1,5 @@
 # dotfiles
-Arch Linux dotfiles
+Run `./install.sh` to install the dotfiles.
 
 ![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
 
