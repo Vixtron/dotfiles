@@ -1,14 +1,16 @@
 #!/bin/bash
 
-sxhkd &
-nitrogen --restore &
-compton --config ~/.config/compton/config -b &
-xsetroot -cursor_name left_ptr &
-polybar watch &
-imwheel &
-pulseeffects --gapplication-service &
+if [ ! -f /tmp/bspwm_loaded ]; then
+    touch /tmp/bspwm_loaded
+    sxhkd &
+    compton --config ~/.config/compton/config -b &
+    polybar watch &
+    nitrogen --restore &
+    xsetroot -cursor_name left_ptr &
+    imwheel &
+    pulseeffects --gapplication-service &
+fi
 
-#bspc monitor -d term brows apps other
 bspc monitor -d    
 
 bspc config active_border_color \#752a2a
@@ -25,12 +27,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Yad state=floating
 bspc rule -a Chromium desktop='^2' state=floating
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-bspc rule -a discord border=off
+bspc rule -a discord state=floating border=off
 bspc rule -a Termite border=off
-bspc rule -a FirefoxNightly border=off
+bspc rule -a Firefox border=off
