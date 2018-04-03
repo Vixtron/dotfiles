@@ -5,6 +5,7 @@ nitrogen --restore &
 compton --config ~/.config/compton/config -b &
 xsetroot -cursor_name left_ptr &
 polybar watch &
+imwheel &
 pulseeffects --gapplication-service &
 
 #bspc monitor -d term brows apps other
