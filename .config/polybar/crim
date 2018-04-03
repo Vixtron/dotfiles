@@ -22,20 +22,20 @@ format-prefix-margin-right = 10
 format-prefix-foreground = #808080
 ;949494 is the original
 format-prefix-background = #1a1a1a
-format-prefix-padding = 4
+format-prefix-padding = 5
 
 label-focused = %name%
 label-focused-foreground = #808080
 label-focused-background = #1a1a1a
-label-focused-padding = 4
+label-focused-padding = 5
 
 label-empty = %name%
 label-empty-foreground = #333333
-label-empty-padding = 4
+label-empty-padding = 5
 
 label-occupied = %name%
 label-occupied-foreground = #4d4d4d
-label-occupied-padding = 4
+label-occupied-padding = 5
 
 [module/cpu]
 type = internal/cpu
@@ -90,7 +90,7 @@ format-volume-background = #1a1a1a
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-format-volume-padding = 4
+format-volume-padding = 5
 format-volume-foreground = #808080
 mapping = true
 
