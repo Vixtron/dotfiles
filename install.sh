@@ -62,7 +62,7 @@ echo "Checking for config dirs..."
 mkdir -p ~/.vim/colors
 mkdir -p ~/autoload/airline/themes
 echo "Copying vim colors, airline & .vimrc..."
-cp -rv .vim/colors/crim.vim ~/.vim/colors/crim.vim
+cp -rv .vim/themes/crim.vim ~/.vim/colors/crim.vim
 cp -rv .vimrc ~/.vimrc
 cp -rv autoload/airline/themes/undead.vim ~/autoload/airline/themes/undead.vim
 echo "Done."
