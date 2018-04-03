@@ -90,15 +90,20 @@ echo "Copying css file"
 cp -rv .config/gtk.css ~/.config/gtk-3.0/gtk.css
 echo "Done."
 
+# imwheel
+echo "Copying config file"
+cp -rv .imwheelrc ~/.imwheelrc
+echo "Done."
+
 echo ""
 echo "Configs done extracting, installing deps..."
 echo ""
 
 # Installing deps
-pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar &> /dev/null && return
+pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel &> /dev/null && return
 read -p "Do you want to install all the deps [y/N] " choice
 if [[ "${choice^^}" == Y ]]; then
-        pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar
+        pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel
 fi
 
 echo ""
