@@ -61,7 +61,8 @@ format-prefix-foreground = #949494
 [module/date]
 type = internal/date
 interval = 1.0
-date = %l:%M %p
+date = "%l:%M "
+; %p for pm/am
 date-alt = %A, %d %B %Y
 time-alt = %l:%M:%S
 label = "%date%"
@@ -136,51 +137,17 @@ padding = 0
 module-margin = 1
 override-redirect = false
 wm-restack = bspwm
-font-0 = FiraSans-Regular:size=11;2
-font-1 = Junicode-Bold:size=10;2
-font-2 = DroidSansGeorgian-Bold:size=12;3
-font-3 = NotoSansMongolian-Bold:size=12;3
-font-4 = DroidSansHebrew-Bold:size=12;3
-font-5 = siji-Bold:size=10;2
-font-6 = fontawesome:size=13;3
+font-0 = Fira Sans Medium:size=11;2
+font-1 = DroidSansGeorgian-Bold:size=12;3
+font-2 = NotoSansMongolian-Bold:size=12;3
+font-3 = fontawesome:size=13;3
 modules-left = bspwm
 modules-center = date
-modules-right = volramp volume
+modules-right = volume
 border-bottom-size = 2
 border-bottom-color = #752a2a
-
 
 [settings]
 throttle-output = 5
 throttle-output-for = 10
 throttle-input-for = 30
-
-[bar/secondwatch]
-monitor = DVI-I-0
-monitor-sctrict = true
-bottom = false
-width = 100%
-height = 30
-fixed-center = true
-offset-x = 0
-offset-y = 0
-background = #141414
-foreground = #ccc
-radius = 0.0
-line-size = 1
-line-color = #752a2a
-border-size = 0
-border-color = #752a2a
-padding = 0
-module-margin = 1
-font-0 = NotoSans-Regular:size=10;2
-font-1 = Junicode-Bold:size=10;2
-font-2 = DroidSansGeorgian-Bold:size=12;3
-font-3 = NotoSansMongolian-Bold:size=12;3
-font-4 = DroidSansHebrew-Bold:size=12;3
-font-5 = siji-Bold:size=10;2
-font-6 = fontawesome:size=13;3
-wm-restack = bspwm
-module-left = bspwmsecond
-border-bottom-size = 2
-border-bottom-color = #752a2a
