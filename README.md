@@ -7,6 +7,8 @@ Your wallpaper is extracted in `~/Pictures/wlp`
 You will need to run `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k` for the custom zsh theme to work because it depends on **powerlevel9k**.
 Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_THEME="powerlevel9k/powerlevel9k"`
 
+**NOTE:** You need pacaur.
+
 ![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
 
 ![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerrofi.png)
