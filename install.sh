@@ -95,6 +95,12 @@ echo "Copying config file"
 cp -rv .imwheelrc ~/.imwheelrc
 echo "Done."
 
+# gtk theme
+echo "Extracting gtk theme"
+sudo cp -rv .themes/Arc-Undead.tar.xz /usr/share/themes
+sudo tar -xf /usr/share/themes/Arc-Undead.tar.xz && rm Arc-Undead.tar.xz
+echo "Done."
+
 echo ""
 echo "Configs done extracting, installing deps..."
 echo ""
