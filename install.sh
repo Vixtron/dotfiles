@@ -100,10 +100,10 @@ echo "Configs done extracting, installing deps..."
 echo ""
 
 # Installing deps
-pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel &> /dev/null && return
+pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel ttf-fira-sans ttf-fira-mono noto &> /dev/null && return
 read -p "Do you want to install all the deps [y/N] " choice
 if [[ "${choice^^}" == Y ]]; then
-        pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel
+        pacaur -S bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel ttf-fira-sans ttf-fira-mono noto
 fi
 
 echo ""
