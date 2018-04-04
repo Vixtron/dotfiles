@@ -1,15 +1,12 @@
 #!/bin/bash
 
-if [ ! -f /tmp/bspwm_loaded ]; then
-    touch /tmp/bspwm_loaded
-    sxhkd &
-    compton --config ~/.config/compton/config -b &
-    polybar watch &
-    nitrogen --restore &
-    xsetroot -cursor_name left_ptr &
-    imwheel &
-    pulseeffects --gapplication-service &
-fi
+sxhkd &
+compton --config ~/.config/compton/config -b &
+polybar watch &
+nitrogen --restore &
+xsetroot -cursor_name left_ptr &
+pulseeffects --gapplication-service &
+
 
 bspc monitor -d    
 
