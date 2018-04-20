@@ -10,7 +10,7 @@ Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_TH
 **NOTE:** You need pacaur.
 
 # Using sysinfo
-Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`
+Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`,
 This script is used to show your system info.
 
 # Other preview images
