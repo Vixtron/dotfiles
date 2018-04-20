@@ -71,7 +71,7 @@ echo "Done."
 echo "Making a wallpaper directory in ~/Pictures/wlp"
 mkdir -p ~/Pictures/wlp
 echo "Copying the wallpaper..."
-cp -rv wallpapers/deer4.png ~/Pictures/wlp/deer4.png
+cp -rv Images/deer4.png ~/Pictures/wlp/deer4.png
 echo "Done."
 
 # bspwm & sxhkd
