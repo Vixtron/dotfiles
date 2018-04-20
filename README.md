@@ -15,6 +15,7 @@ Here is a preview of how it will look to you:
 
 ![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/sysinfo.png)
 
+# Other preview images
 ![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
 
 ![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerrofi.png)
