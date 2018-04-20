@@ -7,7 +7,7 @@ Your wallpaper is extracted in `~/Pictures/wlp`
 You will need to run `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k` for the custom zsh theme to work because it depends on **powerlevel9k**.
 Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_THEME="powerlevel9k/powerlevel9k"`
 
-**NOTE:** You need pacaur.
+**NOTE:** You need pacaur, this `install.sh` script is made to install one rice to your system, these dotfiles come with 2 rices.
 
 # Using sysinfo
 Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`,
