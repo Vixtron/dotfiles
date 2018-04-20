@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# System info script
+
+echo -e '\e[1;37m               #     \e[1;36m| *                           '
+echo -e '\e[1;37m a##e #%" a#"e 6##%  \e[1;36m| | |-^-. |   | \ /           '
+echo -e '\e[1;37m.oOo# #   #    #  #  \e[1;36m| | |   | |   |  X            '
+echo -e '\e[1;37m%OoO# #   %#e" #  #  \e[1;36m| | |   | ^._.| / \ \e[0;37mTM'
+echo 'ーーーーーーーーーーーーーーーーーーーーーー                          '
+
+# OS info
+
+VER="$(uname -os) $(uname -r)"
+echo -e "\e[1;36mKernel\e[1;97m: $VER"
+
+if [ -f /etc/arch-release ]; then
+	OS='\e[1;36mOS\e[1;97m: Arch'
+	echo -e $OS
+else
+	# If OS is not found
+	OS=$(uname -s)
+	VER=$(uname -r)
+fi
+
+export XDG_CURRENT_DESKTOP="bspwm"
+echo -e "\e[1;36mWM\e[1;97m: $XDG_CURRENT_DESKTOP"
+echo -e "\e[1;36mSH\e[1;97m: $SHELL"
+
+OUTPUT="$(echo "$(xprop WM_CLASS)" | awk -F$'"' '/WM_CLASS/{print $2}')"
+echo -e "\e[1;36mTM\e[1;97m: $OUTPUT"
+
+uptime=$(</proc/uptime)
+uptime=${uptime%%.*}
+
+seconds=$(( uptime%60 ))
+minutes=$(( uptime/60%60 ))
+hours=$(( uptime/60/60%24 ))
+days=$(( uptime/60/60/24 ))
+
+echo -e "\e[1;36mUP\e[1;97m: $days days, $hours hours, $minutes minutes, $seconds seconds"

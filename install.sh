@@ -101,6 +101,11 @@ sudo cp -rv .themes/Arc-Undead.tar.xz /usr/share/themes
 sudo tar -xf /usr/share/themes/Arc-Undead.tar.xz && rm Arc-Undead.tar.xz
 echo "Done."
 
+# sysinfo
+echo "Extracting sysinfo to /bin/sysinfo"
+sudo cp -rv sysinfo /bin/sysinfo
+echo "Done. Run using sysinfo!"
+
 echo ""
 echo "Configs done extracting, installing deps..."
 echo ""

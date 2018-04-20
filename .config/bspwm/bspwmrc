@@ -7,7 +7,6 @@ nitrogen --restore &
 xsetroot -cursor_name left_ptr &
 pulseeffects --gapplication-service &
 
-
 bspc monitor -d    
 
 bspc config active_border_color \#752a2a
@@ -25,7 +24,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Yad state=floating
-bspc rule -a Chromium desktop='^2' state=floating
+bspc rule -a Chromium desktop='^1' state=monocle
 bspc rule -a discord state=floating border=off
 bspc rule -a Termite border=off
 bspc rule -a Firefox border=off
