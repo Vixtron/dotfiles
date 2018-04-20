@@ -11,6 +11,7 @@ Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_TH
 
 # Using sysinfo
 Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`
+This script is used to show your system info.
 
 # Other preview images
 ![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deerdiscord.png)
