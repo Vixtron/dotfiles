@@ -9,8 +9,14 @@ Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_TH
 
 **NOTE:** You need pacaur.
 
-![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
+# Using sysinfo
+Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`
+Here is a preview of how it will look to you:
 
-![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerrofi.png)
+![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/sysinfo.png)
 
-![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deereq.png)
+![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
+
+![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerrofi.png)
+
+![img4](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deereq.png)
