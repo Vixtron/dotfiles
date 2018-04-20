@@ -13,11 +13,11 @@ Don't forget to update your `.zshrc` after this and set the zsh theme to `ZSH_TH
 Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`
 Here is a preview of how it will look to you:
 
-![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/sysinfo.png)
+![img1](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/sysinfo.png)
 
 # Other preview images
-![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerdiscord.png)
+![img2](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deerdiscord.png)
 
-![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deerrofi.png)
+![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deerrofi.png)
 
-![img4](https://raw.githubusercontent.com/Vixtron/dotfiles/master/wallpapers/deereq.png)
+![img4](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deereq.png)
