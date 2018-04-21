@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# System info script
-
 echo -e '\e[1;37m               #     \e[1;36m| *                           '
 echo -e '\e[1;37m a##e #%" a#"e 6##%  \e[1;36m| | |-^-. |   | \ /           '
 echo -e '\e[1;37m.oOo# #   #    #  #  \e[1;36m| | |   | |   |  X            '
@@ -38,3 +36,4 @@ hours=$(( uptime/60/60%24 ))
 days=$(( uptime/60/60/24 ))
 
 echo -e "\e[1;36mUP\e[1;97m: $days days, $hours hours, $minutes minutes, $seconds seconds"
+echo ""
