@@ -5,7 +5,7 @@
    urgentcolor:      #752a2a;
 
    fgwhite:          #9e9e9e;
-   blackdarkest:     #1d1d1d;
+   blackdarkest:     #141414;
    blackwidget:      #191919;
    blackentry:       #141414;
    blackselect:      #191919;
@@ -44,7 +44,7 @@ listview {
    scrollbar: true;
    spacing: 0px;
    padding: 1px 0px 0px 0px;
-   margin: 0px 0px 1px 0px;
+   margin: 0px 0px 0px 0px;
    background: @blackdarkest;
 }
 
@@ -139,3 +139,4 @@ case-indicator {
    text-color:@maincolor;
    background-color:@blackwidget;
 }
+
