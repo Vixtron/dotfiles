@@ -65,12 +65,6 @@ NOTE: Edit color vars below for custom website colors!
 
 }
 
-@-moz-document url("https://wiki.archlinux.org/index.php/Special:RecentChanges") {
-	hr {
-		display: none !important;
-	}
-}
-
 /* Global */
 @-moz-document domain("archlinux.org") {
 
@@ -256,6 +250,10 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	div.archwiki-template-message {
+		display: none !important;
+	}
+
+	hr {
 		display: none !important;
 	}
 }
