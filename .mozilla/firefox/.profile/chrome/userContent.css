@@ -8,7 +8,6 @@ NOTE: Edit color vars below for custom website colors!
 
 */
 
-
 /* AUR */
 @-moz-document domain("aur.archlinux.org") {
 
@@ -55,9 +54,23 @@ NOTE: Edit color vars below for custom website colors!
 	table {
 		background-color: var(--secondary-bg-color) !important;
 	}
+
+	#content table {
+		color: var(--fg-color) !important;
+	}
+
+	.mw-changeslist-legend {
+		border: 0px solid !important;
+	}
 }
 
-/* Main */
+@-moz-document url("https://wiki.archlinux.org/index.php/Special:RecentChanges") {
+	hr {
+		display: none !important;
+	}
+}
+
+/* Global */
 @-moz-document domain("archlinux.org") {
 
 	/* Adjust your colors here*/
@@ -89,8 +102,9 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	pre {
-		background: var(--secondary-bg-color) !important;
-		border: 2px solid var(--highlight-color) !important;
+		border: 0px solid !important;
+		background: var(--bg-color) !important;
+		color: var(--secondary-fg-color) !important;
 	}
 
 	#news h3 a {
