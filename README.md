@@ -24,4 +24,4 @@ This script is used to show your system info.
 
 ![img5](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/archwiki1.png)
 
-![img6](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/archwiki1.png)
+![img6](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/archwiki2.png)
