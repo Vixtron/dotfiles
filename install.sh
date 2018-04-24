@@ -91,11 +91,6 @@ echo "Copying css file"
 cp -rv .config/gtk.css ~/.config/gtk-3.0/gtk.css
 echo "Done."
 
-# imwheel
-echo "Copying config file"
-cp -rv .imwheelrc ~/.imwheelrc
-echo "Done."
-
 # gtk theme
 echo "Extracting gtk theme"
 sudo cp -rv .themes/Arc-Undead.tar.xz /usr/share/themes
