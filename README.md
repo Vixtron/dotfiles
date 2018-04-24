@@ -19,3 +19,9 @@ This script is used to show your system info.
 ![img3](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deerrofi.png)
 
 ![img4](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/deereq.png)
+
+# Arch Linux website
+
+![img5](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/archwiki1.png)
+
+![img6](https://raw.githubusercontent.com/Vixtron/dotfiles/master/Images/archwiki1.png)

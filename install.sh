@@ -48,6 +48,7 @@ echo "Done."
 echo "Copying firefox userChrome.css to ~/firefox -> move it to ~/.mozilla/firefox/yourprofile.profile/chrome/userChrome.css"
 mkdir ~/firefox
 cp -rv .mozilla/firefox/.profile/chrome/userChrome.css ~/firefox
+cp -rv .mozilla/firefox/.profile/chrome/userContent.css ~/firefox
 echo "Done."
 
 # zsh
