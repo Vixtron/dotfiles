@@ -77,12 +77,14 @@
 		background: var(--bg-color) !important;
 		border: 0px solid !important;
 	}
-	table {
-		background-color: var(--bg-color) !important;
-	}
+
 	table.results {
 		border-top: 0px solid !important;
 		border-bottom: 0px solid !important;
+	}
+
+	table {
+		background-color: var(--secondary-bg-color) !important;
 	}
 
 	/* Packages */
@@ -110,6 +112,7 @@
 
 	/* Wiki */
 	@-moz-document domain("wiki.archlinux.org") {
+
 		#content {
 			background: var(--secondary-bg-color) !important;
 			color: var(--fg-color) !important;
@@ -131,6 +134,27 @@
 
 		fieldset {
 			border: 1px var(--secondary-fg-color) solid !important;
+		}
+		
+		table {
+			background-color: var(--secondary-bg-color) !important;
+		}
+	}
+
+	/* AUR */
+	@-moz-document domain("aur.archlinux.org") {
+
+		.keyword:link {
+			background-color: var(--bg-color) !important;
+		}
+
+		#archnavbarlogo {
+			/*background-color: var(--bg-color) !important;*/
+			background: url('https://aur.archlinux.org/css/archnavbar/archlogo.png') !important;
+		 }
+
+		#archnavbar.anb-aur ul li#anb-aur a {
+			color: var(--highlight-color) !important;
 		}
 	}
 	
