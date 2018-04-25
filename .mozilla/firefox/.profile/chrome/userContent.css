@@ -16,7 +16,6 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	#archnavbarlogo {
-		/*background-color: var(--bg-color) !important;*/
 		background: url('https://aur.archlinux.org/css/archnavbar/archlogo.png') !important;
 	}
 
@@ -31,7 +30,7 @@ NOTE: Edit color vars below for custom website colors!
 	#content {
 		background: var(--secondary-bg-color) !important;
 		color: var(--fg-color) !important;
-		border: 2px var(--highlight-color) solid !important;
+		border: 0px solid !important;
 	}
 
 	#archnavbar ul li.anb-selected a {
@@ -63,6 +62,11 @@ NOTE: Edit color vars below for custom website colors!
 		border: 0px solid !important;
 	}
 
+	div.archwiki-template-meta-related-articles-start > p {
+		background-color: var(--bg-color) !important;
+		color: var(--secondary-fg-color) !important;
+		border-bottom: 5px var(--highlight-color) solid !important;
+	}
 }
 
 /* Global */
@@ -89,7 +93,7 @@ NOTE: Edit color vars below for custom website colors!
 
 	div.box {
 		background: var(--secondary-bg-color) !important;
-		border: 2px solid var(--highlight-color) !important;
+		border: 0px solid !important;
 	}
 
 	#archnavbar.anb-home ul li#anb-home a, #archnavbar.anb-packages ul li#anb-packages a, #archnavbar.anb-download ul li#anb-download a {
@@ -203,7 +207,7 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	.catlinks {
-	       	border: 0px solid !important;
+	  border: 0px solid !important;
 		background-color: var(--secondary-bg-color) !important;
 	}
 
@@ -236,16 +240,17 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	div.archwiki-template-box.archwiki-template-box-warning {
-		background-color: var(--highlight-color) !important;
+		background-color: var(--bg-color) !important;
+		border-bottom: 5px var(--highlight-color) solid !important;
 	}
 
 	div.archwiki-template-box.archwiki-template-box-tip, div.archwiki-template-box.archwiki-template-box-note {
 		background-color: var(--bg-color) !important;
-		color: var(--fg-color) !important
+		color: var(--fg-color) !important;
 	}
 
 	div.archwiki-template-box {
-		color: var(--bg-color) !important;
+		color: var(--fg-color) !important;
 		border: 0px solid !important;
 	}
 
