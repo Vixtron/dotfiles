@@ -1,0 +1,61 @@
+{
+  "_from": "file:/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+  "_id": "one-black-syntax@1.14.0",
+  "_inBundle": false,
+  "_integrity": "sha512-G6XMPrd9Y4XydzZ3U8OJ8t7iRtyEbsVVj7UaTayy1Pgl3rrNdG9OjxUZpSehkpEqTbd7xcuVllSaOkcQCob3eA==",
+  "_location": "/one-black-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/tmp/apm-install-dir-118325-19843-gug7yb.eha3l",
+    "raw": "/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+    "rawSpec": "/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+    "saveSpec": "file:/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+    "fetchSpec": "/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+  "_shasum": "a1cacb06b3c4e2768d0d0514076c21078b929b90",
+  "_spec": "/tmp/d-118325-19843-1q9ovw0.gpclf/package.tgz",
+  "_where": "/tmp/apm-install-dir-118325-19843-gug7yb.eha3l",
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/adimote/one-black-syntax",
+    "sha": "37ffc9a52f9fad8636dc1442293323660af9ec92"
+  },
+  "bugs": {
+    "url": "https://github.com/adimote/one-black-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A black syntax theme",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/adimote/one-black-syntax#readme",
+  "keywords": [
+    "dark",
+    "black",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-black-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adimote/one-black-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.14.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
