@@ -17,7 +17,7 @@ NOTE: Edit color vars below for custom website colors!
 
 	#archnavbarlogo {
 		background: url('https://aur.archlinux.org/css/archnavbar/archlogo.png') !important;
-	}
+	}1
 
 	#archnavbar.anb-aur ul li#anb-aur a {
 		color: var(--highlight-color) !important;
@@ -47,7 +47,7 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	fieldset {
-		border: 1px var(--secondary-fg-color) solid !important;
+		border: 0px solid !important;
 	}
 
 	table {
@@ -67,6 +67,20 @@ NOTE: Edit color vars below for custom website colors!
 		color: var(--secondary-fg-color) !important;
 		border-bottom: 5px var(--highlight-color) solid !important;
 	}
+
+	.mw-ui-input:focus {
+    border-color: var(--highlight-color) !important;
+		border-radius: 0px !important;
+    box-shadow: inset 0 0 0 1px var(--secondary-bg-color) !important;
+	}
+
+	.mw-ui-input {
+    background-color: var(--bg-color) !important;
+    color: var(--fg-color) !important;
+    border: 1px var(--secondary-bg-color) solid !important;
+		border-radius: 0px !important;
+    box-shadow: inset 0 0 0 0.1em var(--secondary-bg-color) !important;
+	}
 }
 
 /* Global */
@@ -79,6 +93,7 @@ NOTE: Edit color vars below for custom website colors!
 		--secondary-bg-color: #191919;
 		--secondary-fg-color: #616161;
 		--highlight-color: #752a2a;
+		--secondary-hl-color: #AC4142;
 	}
 
 	body {
@@ -263,10 +278,17 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	.results .flagged {
-		color: #AC4142 !important;
+		color: var(--secondary-hl-color) !important;
 	}
 
 	#pkgdetails #actionlist .flagged {
-		color: #AC4142 !important;
+		color: var(--secondary-hl-color) !important;
+	}
+
+	.mw-plusminus-neg {
+		color: var(--secondary-hl-color) !important;
+	}
+	.mw-plusminus-pos {
+		color: #90A959 !important;
 	}
 }
