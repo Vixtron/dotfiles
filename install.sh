@@ -102,6 +102,11 @@ echo "Extracting sysinfo to /bin/sysinfo"
 sudo cp -rv sysinfo /bin/sysinfo
 echo "Done. Run using sysinfo!"
 
+# atom
+echo "Extracting Atom theme"
+sudo cp -r .atom/packages/one-black-syntax ~/.atom/packages
+echo "Done."
+
 echo ""
 echo "Configs done extracting, installing deps..."
 echo ""
