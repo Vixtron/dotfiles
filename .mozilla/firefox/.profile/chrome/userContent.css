@@ -261,4 +261,12 @@ NOTE: Edit color vars below for custom website colors!
 	hr {
 		display: none !important;
 	}
+
+	.results .flagged {
+		color: #AC4142 !important;
+	}
+
+	#pkgdetails #actionlist .flagged {
+		color: #AC4142 !important;
+	}
 }
