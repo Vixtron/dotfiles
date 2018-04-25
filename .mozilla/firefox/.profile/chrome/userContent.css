@@ -17,10 +17,10 @@ NOTE: Edit color vars below for custom website colors!
 
 	#archnavbarlogo {
 		background: url('https://aur.archlinux.org/css/archnavbar/archlogo.png') !important;
-	}1
+	}
 
 	#archnavbar.anb-aur ul li#anb-aur a {
-		color: var(--highlight-color) !important;
+		color: var(--secondary-hl-color) !important;
 	}
 }
 
@@ -34,7 +34,7 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	#archnavbar ul li.anb-selected a {
-		color: var(--highlight-color) !important;
+		color: var(--secondary-hl-color) !important;
 	}
 
 	table.wikitable > tr > th, table.wikitable > * > tr > th {
@@ -94,6 +94,7 @@ NOTE: Edit color vars below for custom website colors!
 		--secondary-fg-color: #616161;
 		--highlight-color: #752a2a;
 		--secondary-hl-color: #AC4142;
+		--third-hl-color: #90A959;
 	}
 
 	body {
@@ -112,7 +113,7 @@ NOTE: Edit color vars below for custom website colors!
 	}
 
 	#archnavbar.anb-home ul li#anb-home a, #archnavbar.anb-packages ul li#anb-packages a, #archnavbar.anb-download ul li#anb-download a {
-		color: var(--highlight-color) !important;
+		color: var(--secondary-hl-color) !important;
 	}
 
 	pre {
@@ -285,10 +286,10 @@ NOTE: Edit color vars below for custom website colors!
 		color: var(--secondary-hl-color) !important;
 	}
 
-	.mw-plusminus-neg {
+	.mw-plusminus-neg, .todo-table .incomplete, .signoff-no, #key-status .signed-no, #release-list .available-no {
 		color: var(--secondary-hl-color) !important;
 	}
-	.mw-plusminus-pos {
-		color: #90A959 !important;
+	.mw-plusminus-pos, .todo-table .complete, .signoff-yes, #key-status .signed-yes, #release-list .available-yes {
+		color: var(--third-hl-color) !important;
 	}
 }
