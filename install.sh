@@ -93,8 +93,8 @@ echo "Done."
 
 # gtk theme
 echo "Extracting gtk theme"
-sudo cp -rv .themes/Arc-Undead.tar.xz /usr/share/themes
-sudo tar -xf /usr/share/themes/Arc-Undead.tar.xz && rm Arc-Undead.tar.xz
+sudo cp -rv .themes/Crim.tar.xz /usr/share/themes
+sudo tar -xf /usr/share/themes/Crim.tar.xz && rm Crim.tar.xz
 echo "Done."
 
 # sysinfo
