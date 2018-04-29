@@ -19,7 +19,7 @@
 	}
 
 	#archnavbar.anb-aur ul li#anb-aur a {
-		color: var(--secondary-hl-color) !important;
+		color: var(--highlight-color) !important;
 	}
 }
 
@@ -33,7 +33,7 @@
 	}
 
 	#archnavbar ul li.anb-selected a {
-		color: var(--secondary-hl-color) !important;
+		color: var(--highlight-color) !important;
 	}
 
 	table.wikitable > tr > th, table.wikitable > * > tr > th {
@@ -66,19 +66,19 @@
 		color: var(--secondary-fg-color) !important;
 		border-bottom: 5px var(--highlight-color) solid !important;
 	}
-
+	
 	.mw-ui-input:focus {
-    border-color: var(--highlight-color) !important;
+		border-color: var(--highlight-color) !important;
 		border-radius: 0px !important;
-    box-shadow: inset 0 0 0 1px var(--secondary-bg-color) !important;
+		box-shadow: inset 0 0 0 1px var(--secondary-bg-color) !important;
 	}
 
 	.mw-ui-input {
-    background-color: var(--bg-color) !important;
-    color: var(--fg-color) !important;
-    border: 1px var(--secondary-bg-color) solid !important;
+		background-color: var(--bg-color) !important;
+		color: var(--fg-color) !important;
+		border: 1px var(--secondary-bg-color) solid !important;
 		border-radius: 0px !important;
-    box-shadow: inset 0 0 0 0.1em var(--secondary-bg-color) !important;
+		box-shadow: inset 0 0 0 0.1em var(--secondary-bg-color) !important;
 	}
 }
 
@@ -112,7 +112,7 @@
 	}
 
 	#archnavbar.anb-home ul li#anb-home a, #archnavbar.anb-packages ul li#anb-packages a, #archnavbar.anb-download ul li#anb-download a {
-		color: var(--secondary-hl-color) !important;
+		color: var(--highlight-color) !important;
 	}
 
 	pre {
@@ -142,6 +142,7 @@
 	#news h4 {
 		border-bottom: 2px var(--secondary-bg-color) solid !important;
 	}
+
 	dl dt, dl dd {
 		border-top: 0px solid !important;
 		color: var(--secondary-fg-color) !important;
@@ -151,6 +152,7 @@
 		text-decoration: none !important;
 		color: var(--highlight-color) !important;
 	}
+
 	a:link, th a:visited {
 		color: var(--secondary-fg-color) !important;
 	}
@@ -160,6 +162,7 @@
 		color: var(--fg-color) !important;
 		border: 0px solid !important;
 	}
+
 	#pkgsearch input {
 		color: var(--fg-color) !important;
 		background: var(--bg-color) !important;
