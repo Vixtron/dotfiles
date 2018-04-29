@@ -11,9 +11,9 @@ mkdir ~/.config
 
 # xfce4-terminal
 echo "Checking for config dir..."
-mkdir -p ~/.config/xfce4/terminal
-echo "Copying XFCE-Terminal config"
-cp -rv .config/xfce/terminal/terminalrc ~/.config/xfce4/terminal/terminalrc
+mkdir -p ~/.config/alacritty
+echo "Copying Alacritty config"
+cp -rv .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 echo "Done."
 
 # polybar
