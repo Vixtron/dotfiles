@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	termite
+	alacritty
 
 # program launcher
 super + @space
@@ -18,13 +18,6 @@ super + c
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Switch keyboard layout.
-super + alt + u
-  setxkbmap us
-
-super + alt + d
-  setxkbmap dvorak
-
 # maim
 super + alt + j
   maim -s "image.png"
@@ -32,10 +25,6 @@ super + alt + j
 #
 # bspwm hotkeys
 #
-
-# quit bspwm normally
-super + alt + Escape
-	bspc quit
 
 # close and kill
 super + {_,shift + }w
