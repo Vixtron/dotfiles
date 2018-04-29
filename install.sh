@@ -9,7 +9,7 @@ echo ""
 echo "Checking if you have a .config directory..."
 mkdir ~/.config
 
-# xfce4-terminal
+# alacritty
 echo "Checking for config dir..."
 mkdir -p ~/.config/alacritty
 echo "Copying Alacritty config"
