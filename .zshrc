@@ -2,8 +2,9 @@
   export ZSH=$HOME/.oh-my-zsh
   export TERM="xterm-256color"
   export UPDATE_ZSH_DAYS=5
+  export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-#theme
+# Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 DISABLE_AUTO_UPDATE="false"
@@ -15,7 +16,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-#export LANG=en_US.UTF-8
+# Export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -23,9 +24,5 @@ if [[ -n $SSH_CONNECTION ]]; then
  else
    export EDITOR='nano'
 fi
-
-
-#ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Alieses below
