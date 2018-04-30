@@ -12,15 +12,11 @@ super + @space
 
 # screenshot launcher
 super + c
-  screenshot
+  yadshot
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-
-# maim
-super + alt + j
-  maim -s "image.png"
 
 #
 # bspwm hotkeys
