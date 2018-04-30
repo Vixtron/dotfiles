@@ -11,6 +11,8 @@ You need to compile Alacritty as your terminal, visit [jwilm/alacritty](https://
 
 **NOTE:** You need pacaur, this `install.sh` script is made to install one rice to your system, these dotfiles come with 2 rices.
 
+**ADDITIONAL:** You may use `.discord.css`, this does not get extracted with `install.sh` because it violates Discord's ToS.
+
 # Using sysinfo
 Sysinfo script has been extracted to your `/bin` directory and is ready to use by running `sysinfo`,
 This script is used to show your system info.
