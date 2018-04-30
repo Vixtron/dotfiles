@@ -388,3 +388,7 @@
 .theme-dark .embedPill-1Zntps {
   display: none;
 }
+
+.mask-3OgeRz {
+  -webkit-mask: unset !important;
+}
