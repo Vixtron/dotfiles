@@ -107,6 +107,11 @@ echo "Extracting Atom theme"
 sudo cp -r .atom/packages/one-black-syntax ~/.atom/packages
 echo "Done."
 
+#zshrc
+echo "Extracting zshrc"
+sudo cp -r .zshrc ~/.zshrc
+echo "Done."
+
 echo ""
 echo "Configs done extracting, installing deps..."
 echo ""
