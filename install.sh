@@ -102,11 +102,6 @@ echo "Extracting sysinfo to /bin/sysinfo"
 sudo cp -rv sysinfo /bin/sysinfo
 echo "Done. Run using sysinfo!"
 
-# atom
-echo "Extracting Atom theme"
-sudo cp -r .atom/packages/one-black-syntax ~/.atom/packages
-echo "Done."
-
 #zshrc
 echo "Extracting zshrc"
 sudo cp -r .zshrc ~/.zshrc
