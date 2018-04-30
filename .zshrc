@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation & exports.
-  export ZSH=/home/vix/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
   export TERM="xterm-256color"
   export UPDATE_ZSH_DAYS=5
 
