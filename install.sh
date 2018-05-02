@@ -45,10 +45,10 @@ cp -rv .local/share/rofi/themes/crim.rasi ~/.local/share/rofi/themes/crim.rasi
 echo "Done."
 
 # firefox
-echo "Copying firefox userChrome.css to ~/firefox -> move it to ~/.mozilla/firefox/yourprofile.profile/chrome/userChrome.css"
+echo "Copying firefox userChrome.css to ~/firefox -> move it to ~/.mozilla/firefox/yourprofile.default/chrome/userChrome.css"
 mkdir ~/firefox
-cp -rv .mozilla/firefox/.profile/chrome/userChrome.css ~/firefox
-cp -rv .mozilla/firefox/.profile/chrome/userContent.css ~/firefox
+cp -rv .mozilla/firefox/.default/chrome/userChrome.css ~/firefox
+cp -rv .mozilla/firefox/.default/chrome/userContent.css ~/firefox
 echo "Done."
 
 # zsh
