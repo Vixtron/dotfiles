@@ -1,30 +1,31 @@
 #!/bin/bash
 
-sxhkd &
-compton --config ~/.config/compton/config -b &
-polybar watch &
-nitrogen --restore &
-xsetroot -cursor_name left_ptr &
-pulseeffects --gapplication-service &
-
-bspc monitor -d    
-
-bspc config active_border_color \#752a2a
-bspc config focused_border_color \#752a2a
-bspc config normal_border_color \#752a2a
- 
-bspc config focus_follows_pointer true
-
-bspc config border_width         0
-bspc config window_gap           12
-
-bspc config split_ratio          0.52
-
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-
-bspc rule -a Yad state=floating
-bspc rule -a Chromium desktop='^1' state=monocle
-bspc rule -a discord state=floating border=off
-bspc rule -a Termite border=off
-bspc rule -a Firefox border=off
+if xhost >& /dev/null ; then echo "Display exists, starting..."
+	# Startup progs
+	sxhkd 2>&1 | tee ~/.sxhkd.log &
+	compton --config ~/.config/compton/config -b &
+	polybar watch &
+	nitrogen --restore &
+	xsetroot -cursor_name left_ptr &
+	pulseeffects --gapplication-service &
+	
+	# Display setup	
+	bspc monitor -d    
+	bspc config active_border_color           \#752a2a
+		bspc config focused_border_color  \#752a2a
+		bspc config normal_border_color   \#752a2a
+		bspc config focus_follows_pointer true
+	bspc config border_width         0
+	bspc config window_gap           12
+	bspc config split_ratio          0.52
+	bspc config borderless_monocle   true
+	bspc config gapless_monocle      true
+	
+	# Program order
+	bspc rule -a Yad state=floating
+	bspc rule -a Chromium desktop='^1' state=monocle
+	bspc rule -a discord state=floating border=off
+	bspc rule -a Termite border=off
+	bspc rule -a Firefox border=off
+else echo "Display invalid"; 
+fi
