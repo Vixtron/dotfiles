@@ -102,9 +102,14 @@ echo "Extracting sysinfo to /bin/sysinfo"
 sudo cp -rv sysinfo /bin/sysinfo
 echo "Done. Run using sysinfo!"
 
-#zshrc
-echo "Extracting zshrc"
+# zshrc
+echo "Extracting .zshrc"
 sudo cp -r .zshrc ~/.zshrc
+echo "Done."
+
+# xinitrc
+echo "Extracting .xinitrc"
+sudo cp -r .xinitrc ~/.xinitrc
 echo "Done."
 
 echo ""
@@ -112,7 +117,7 @@ echo "Configs done extracting, installing deps..."
 echo ""
 
 # Installing deps
-PACKAGES="bspwm sxhkd xfce4-terminal zsh rofi neofetch compton polybar imwheel ttf-fira-sans ttf-fira-mono noto"
+PACKAGES="bspwm sxhkd zsh rofi neofetch compton polybar ttf-fira-sans ttf-fira-mono noto"
 
 pacaur -S $PACKAGES &> /dev/null && return
 read -p "Do you want to install all the deps [y/N] " choice
