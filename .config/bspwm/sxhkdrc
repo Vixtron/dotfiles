@@ -12,7 +12,7 @@ super + @space
 
 # screenshot launcher
 super + c
-  yadshot
+  yadshot -s
 
 # make sxhkd reload its configuration files:
 super + Escape
