@@ -22,20 +22,20 @@ format-prefix-margin-right = 10
 format-prefix-foreground = #808080
 ;949494 is the original
 format-prefix-background = #1a1a1a
-format-prefix-padding = 5
+format-prefix-padding = 6
 
 label-focused = %name%
 label-focused-foreground = #808080
 label-focused-background = #1a1a1a
-label-focused-padding = 5
+label-focused-padding = 6
 
 label-empty = %name%
 label-empty-foreground = #333333
-label-empty-padding = 5
+label-empty-padding = 6
 
 label-occupied = %name%
 label-occupied-foreground = #4d4d4d
-label-occupied-padding = 5
+label-occupied-padding = 6
 
 [module/cpu]
 type = internal/cpu
@@ -61,7 +61,7 @@ format-prefix-foreground = #949494
 [module/date]
 type = internal/date
 interval = 1.0
-date = "%l:%M "
+date = " %l:%M "
 ; %p for pm/am
 date-alt = %A, %d %B %Y
 time-alt = %l:%M:%S
@@ -90,7 +90,7 @@ format-volume-background = #1a1a1a
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-format-volume-padding = 5
+format-volume-padding = 6
 format-volume-foreground = #808080
 mapping = true
 
